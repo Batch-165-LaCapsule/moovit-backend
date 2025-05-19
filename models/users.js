@@ -1,0 +1,55 @@
+//importation du module "mongoose"
+const mongoose = require('mongoose');
+
+//Schema du model de la Souscollection "Stats" contenus dans la collection "Users"
+const statSchema = mongoose.Schema(
+{
+   nbSessions:Number,
+   totalTime:Number,
+   lastConnection:Date,
+   nbEtaps:Number,
+   creationDate:Date,
+});
+
+//Schema du model de la Souscollection "form" contenus dans la collection "Users"
+
+const formSchema= mongoose.Schema(
+{
+    reason:String,
+    dayTime:String,
+
+})
+
+//Schema du model de la Collection "Users"
+const userSchema = mongoose.Schema(
+{
+
+    admin:Boolean=false,
+    token:{type:String, require:true},
+    email:{type:String, require:true},
+    password:{type:String, require:true},
+    username:{type:String, require:true},
+    name:{type:String, require:true},
+    gender:String,
+    age:Number,
+    coordinate:Object,
+    city:String,
+    notificationActive:Boolean,
+    photoUrl:String,
+    level:{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' }.levels.subLevels,
+    xp:Number=0,
+    isSocialConnected:Boolean,
+    sportPlayed:{type:[{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' }], require:true},
+    form:{type:formSchema,require:true},
+    stats:statSchema,
+    medals:[{ type: mongoose.Schema.Types.ObjectId, ref: 'medals' }]=[],
+   
+
+ 
+});
+
+
+
+//exportation du model "User"
+const User = mongoose.model('users', userSchema);
+module.exports = User;
