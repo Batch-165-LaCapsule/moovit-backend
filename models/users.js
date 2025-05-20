@@ -26,11 +26,11 @@ const userSchema = mongoose.Schema(
 {
 
     admin:{type:Boolean,default:false},
-    token:{type:String, require:true},
-    email:{type:String, require:true},
-    password:{type:String, require:true},
-    username:{type:String, require:true},
-    name:{type:String, require:true},
+    token:{type:String, required:true},
+    email:{type:String, required:true},
+    password:{type:String, required:true},
+    username:String,
+    name:String,
     gender:String,
     age:Number,
     //déclaration du type geojson point
@@ -41,8 +41,8 @@ const userSchema = mongoose.Schema(
     level:{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' },
     xp:{type:Number, default:0},
     isSocialConnected:Boolean,
-    sportPlayed:{type:[{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' }], require:true},
-    form:{type:formSchema,require:true},
+    sportPlayed:[{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' }],
+    form:formSchema,
     stats:statSchema,
     medals:{type:[{ type: mongoose.Schema.Types.ObjectId, ref: 'medals' }], default:[]},
    
