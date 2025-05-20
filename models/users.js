@@ -9,6 +9,7 @@ const statSchema = mongoose.Schema(
    lastConnection:Date,
    nbEtaps:Number,
    creationDate:Date,
+   lastModified:Date,
 });
 
 //Schema du model de la Souscollection "form" contenus dans la collection "Users"
@@ -32,7 +33,8 @@ const userSchema = mongoose.Schema(
     name:{type:String, require:true},
     gender:String,
     age:Number,
-    coordinate:Object,
+    //déclaration du type geojson point
+    coordinate:{name:String,location:{type:{type:String},coordinates:{type:[Number]}}},
     city:String,
     notificationActive:Boolean,
     photoUrl:String,
