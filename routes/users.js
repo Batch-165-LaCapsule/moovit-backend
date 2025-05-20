@@ -68,7 +68,7 @@ router.post("/signin", (req, res) => {
       }
     })
     .catch((error) => {
-      res.status(500).json({ error: "error while saving doc" }); // Si une erreur survient lors de la sauvegarde du document
+      res.status(500).json({ error: "connection data base error " }); // Si une erreur survient lors de la sauvegarde du document
     });
 });
 
