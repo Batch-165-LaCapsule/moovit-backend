@@ -18,8 +18,8 @@ router.post("/signup", (req, res) => {
   // Check if the user has not already been registered
   User.findOne({ email: req.body.email }).then((data) => {
     //recherche dans la db User UN seul User avec le nom en param
-     const emailRegex = /^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i;
-     console.log(emailRegex.test(req.body.email)); 
+    const emailRegex = /^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i;
+    console.log(emailRegex.test(req.body.email));
 
     if (data === null && emailRegex.test(req.body.email)) {
       const hash = bcrypt.hashSync(req.body.password, 10); // cryptage du password (hashé 10x)
@@ -29,11 +29,16 @@ router.post("/signup", (req, res) => {
         password: hash, // cryptage du password (hashé 10x)
         token: uid2(32), //token de 32 caracteres
       });
-      
-      newUser.save().then((newDoc) => {
-        //save pour les new users et renvoi un doc json
-        res.json({ result: true, token: newDoc.token }); //doc json qui mentionne que tout c'est bien passé et le num du token
-      });
+
+      newUser
+        .save()
+        .catch((error) => {
+          res.status(500).json({ error: "error while saving doc" }); // Si une erreur survient lors de la sauvegarde du document
+        })
+        .then((newDoc) => {
+          //save pour les new users et renvoi un doc json
+          res.json({ result: true, token: newDoc.token }); //doc json qui mentionne que tout c'est bien passé et le num du token
+        });
     } else {
       // User already exists in database
       res.json({ result: false, error: "Wrong email or already exists " }); //doc json qui mentionne que l'user a deja ete trouvé dans la db
