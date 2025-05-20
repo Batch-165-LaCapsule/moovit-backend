@@ -2,8 +2,7 @@
 const mongoose = require('mongoose');
 
 //Schema du model de la Souscollection "Stats" contenus dans la collection "Users"
-const statSchema = mongoose.Schema(
-{
+const statSchema = mongoose.Schema({
    nbSessions:Number,
    totalTime:Number,
    lastConnection:Date,
@@ -14,8 +13,7 @@ const statSchema = mongoose.Schema(
 
 //Schema du model de la Souscollection "form" contenus dans la collection "Users"
 
-const formSchema= mongoose.Schema(
-{
+const formSchema= mongoose.Schema({
     reason:String,
     dayTime:String,
 

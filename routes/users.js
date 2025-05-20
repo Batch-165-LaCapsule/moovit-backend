@@ -234,4 +234,16 @@ router.post("/signup", (req, res) => {
 //   });
 // });
 
+
+//Route onboarding
+router.post("/onboarding", (req, res) => 
+{
+  let {name, email} = req.body
+
+  res.json({name:name, email:email})
+
+
+});
+
+
 module.exports = router;
