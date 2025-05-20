@@ -65,13 +65,13 @@ router.post("/signin", (req, res) => {
         res.json({ 
             result: true, 
             token: data.token, 
-            sportPlayed: data.User,
+            sportPlayed: data.sportPlayed,
             username: data.username, 
             admin: data.admin,
             xp:data.xp,
             level:data.level,
             photoUrl:data.photoUrl,
-            
+
         }); //renvoi un json avec un resultat true et le token
       } else {
         res.json({ result: false, error: "User not found or wrong password" }); // renvoi un json resultat false et un msg error
