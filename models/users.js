@@ -25,7 +25,7 @@ const formSchema= mongoose.Schema(
 const userSchema = mongoose.Schema(
 {
 
-    admin:Boolean=false,
+    admin:{type:Boolean,default:false},
     token:{type:String, require:true},
     email:{type:String, require:true},
     password:{type:String, require:true},
@@ -38,13 +38,13 @@ const userSchema = mongoose.Schema(
     city:String,
     notificationActive:Boolean,
     photoUrl:String,
-    level:{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' }.levels.subLevels,
-    xp:Number=0,
+    level:{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' },
+    xp:{type:Number, default:0},
     isSocialConnected:Boolean,
     sportPlayed:{type:[{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' }], require:true},
     form:{type:formSchema,require:true},
     stats:statSchema,
-    medals:[{ type: mongoose.Schema.Types.ObjectId, ref: 'medals' }]=[],
+    medals:{type:[{ type: mongoose.Schema.Types.ObjectId, ref: 'medals' }], default:[]},
    
 
  
