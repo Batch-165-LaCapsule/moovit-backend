@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 require("../models/connection"); //import de la connection string
 // const User = require("../models/users"); //import du schema user
+//const { checkBody } = require('../modules/checkBody');
 // const { checkBody } = require("../modules/checkBody"); //import de la fonction checkBody qui verifie que tout le champs soit ni null ni une string vide
 const uid2 = require("uid2"); // module qui permet de genere une num de token
 const bcrypt = require("bcrypt"); //module permet de haché le password

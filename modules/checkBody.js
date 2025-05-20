@@ -2,7 +2,7 @@ function checkBody(body, keys) {
   let isValid = true;
 
   for (const field of keys) {
-    if (!body[field] || body[field] === "") {
+    if (!body[field] || body[field] === '') {
       isValid = false;
     }
   }
@@ -10,6 +10,7 @@ function checkBody(body, keys) {
   return isValid;
 }
 
-modules.exports = { checkBody };
+module.exports = { checkBody };
+
 
 
