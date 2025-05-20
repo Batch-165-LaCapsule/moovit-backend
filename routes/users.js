@@ -62,7 +62,17 @@ router.post("/signin", (req, res) => {
       //recherche dans la db User UN seul User avec le nom en param et renvoi des donné le consernant
       if (data && bcrypt.compareSync(req.body.password, data.password)) {
         //si data et password rentré et crypté est identique au password en db
-        res.json({ result: true, token: data.token }); //renvoi un json avec un resultat true et le token
+        res.json({ 
+            result: true, 
+            token: data.token, 
+            sportPlayed: data.User,
+            username: data.username, 
+            admin: data.admin,
+            xp:data.xp,
+            level:data.level,
+            photoUrl:data.photoUrl,
+            
+        }); //renvoi un json avec un resultat true et le token
       } else {
         res.json({ result: false, error: "User not found or wrong password" }); // renvoi un json resultat false et un msg error
       }
