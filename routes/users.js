@@ -1,54 +1,76 @@
 var express = require("express");
 var router = express.Router();
 require("../models/connection"); //import de la connection string
- const User = require("../models/users"); //import du schema user
+const User = require("../models/users"); //import du schema user
 
- const { checkBody } = require("../modules/checkBody"); //import de la fonction checkBody qui verifie que tout le champs soit ni null ni une string vide
+const { checkBody } = require("../modules/checkBody"); //import de la fonction checkBody qui verifie que tout le champs soit ni null ni une string vide
 const uid2 = require("uid2"); // module qui permet de genere une num de token
 const bcrypt = require("bcrypt"); //module permet de haché le password
 
-// router.post('/signup', (req, res) => {//route post endpoint /signup
-//   if (!checkBody(req.body, ['email', 'password'])) { //fonction checkBody qui verifie que tout le champs soit ni null ni une string vide prend en parametre du body ['username', 'password']
-//     res.json({ result: false, error: 'Missing or empty fields' });//la fun renvoi un json resiltat false error: 'Missing or empty fields'
-//     return;
-//   }
+router.post("/signup", (req, res) => {
+  //route post endpoint /signup
+  if (!checkBody(req.body, ["email", "password"])) {
+    //fonction checkBody qui verifie que tout le champs soit ni null ni une string vide prend en parametre du body ['username', 'password']
+    res.json({ result: false, error: "Missing or empty fields" }); //la fun renvoi un json resiltat false error: 'Missing or empty fields'
+    return;
+  }
 
-//   // Check if the user has not already been registered
-//   User.findOne({ email: req.body.email }).then(data => { //recherche dans la db User UN seul User avec le nom en param
-//     if (data === null) {
-//       const hash = bcrypt.hashSync(req.body.password, 10);// cryptage du password (hashé 10x)
+  // Check if the user has not already been registered
+  User.findOne({ email: req.body.email }).then((data) => {
+    //recherche dans la db User UN seul User avec le nom en param
+    const emailRegex = /^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i;
+    console.log(emailRegex.test(req.body.email));
 
-//       const newUser = new User({
-//         email: req.body.email,
-//         password: hash, // cryptage du password (hashé 10x)
-//         token: uid2(32), //token de 32 caracteres
+    if (data === null && emailRegex.test(req.body.email)) {
+      const hash = bcrypt.hashSync(req.body.password, 10); // cryptage du password (hashé 10x)
 
-//       });
+      const newUser = new User({
+        email: req.body.email,
+        password: hash, // cryptage du password (hashé 10x)
+        token: uid2(32), //token de 32 caracteres
+      });
 
-//       newUser.save().then(newDoc => { //save pour les new users et renvoi un doc json
-//         res.json({ result: true, token: newDoc.token }); //doc json qui mentionne que tout c'est bien passé et le num du token
-//       });
-//     } else {
-//       // User already exists in database
-//       res.json({ result: false, error: 'User already exists' });//doc json qui mentionne que l'user a deja ete trouvé dans la db
-//     }
-//   });
-// });
+      newUser
+        .save()
+        .catch((error) => {
+          res.status(500).json({ error: "error while saving doc" }); // Si une erreur survient lors de la sauvegarde du document
+        })
+        .then((newDoc) => {
+          //save pour les new users et renvoi un doc json
+          res.json({ result: true, token: newDoc.token }); //doc json qui mentionne que tout c'est bien passé et le num du token
+        });
+    } else {
+      // User already exists in database
+      res.json({ result: false, error: "Wrong email or already exists " }); //doc json qui mentionne que l'user a deja ete trouvé dans la db
+    }
+  });
+});
 
-// router.post('/signin', (req, res) => {//route post endpoint /signin
-//   if (!checkBody(req.body, ['username', 'password'])) {//fonction checkBody qui verifie que tout le champs soit ni null ni une string vide prend en parametre du body ['username', 'password']
-//     res.json({ result: false, error: 'Missing or empty fields' });//la fun renvoi un json resiltat false error: 'Missing or empty fields'
-//     return;
-//   }
+router.post("/signin", (req, res) => {
+  //route post endpoint /signin
+  if (!checkBody(req.body, ["email", "password"])) {
+    //fonction checkBody qui verifie que tout le champs soit ni null ni une string vide prend en parametre du body ['username', 'password']
+    res.json({ result: false, error: "wrong or empty fields" }); //la fun renvoi un json resiltat false error: 'Missing or empty fields'
+    return;
+  }
 
-//   User.findOne({ username: req.body.username }).then(data => { //recherche dans la db User UN seul User avec le nom en param et renvoi des donné le consernant
-//     if (data && bcrypt.compareSync(req.body.password, data.password)) { //si data et password rentré et crypté est identique au password en db
-//       res.json({ result: true, token: data.token }); //renvoi un json avec un resultat true et le token
-//     } else {
-//       res.json({ result: false, error: 'User not found or wrong password' });// renvoi un json resultat false et un msg error
-//     }
-//   });
-// });
+  User.findOne({ email: req.body.email })
+    .then((data) => {
+      // const emailRegex = /^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i;
+      // console.log(emailRegex.test(req.body.email));
+
+      //recherche dans la db User UN seul User avec le nom en param et renvoi des donné le consernant
+      if (data && bcrypt.compareSync(req.body.password, data.password)) {
+        //si data et password rentré et crypté est identique au password en db
+        res.json({ result: true, token: data.token }); //renvoi un json avec un resultat true et le token
+      } else {
+        res.json({ result: false, error: "User not found or wrong password" }); // renvoi un json resultat false et un msg error
+      }
+    })
+    .catch((error) => {
+      res.status(500).json({ error: "connection data base error " }); // Si une erreur survient lors de la sauvegarde du document
+    });
+});
 
 // router.post('/form/p1', (req, res) => { //
 //   if (!checkBody(req.body, ['username', 'name'])) {
