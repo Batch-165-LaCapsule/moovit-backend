@@ -2,6 +2,8 @@ var express = require("express");
 var router = express.Router();
 require("../models/connection"); //import de la connection string
 const User = require("../models/users"); //import du schema user
+const Activity = require("../models/activities"); //import du schema activity
+const Medal = require("../models/medals")
 
 const { checkBody } = require("../modules/checkBody"); //import de la fonction checkBody qui verifie que tout le champs soit ni null ni une string vide
 const uid2 = require("uid2"); // module qui permet de genere une num de token
@@ -254,5 +256,180 @@ router.post("/signin", (req, res) => {
 //     }
 //   });
 // });
+
+
+//Route onboarding
+router.post("/onboarding", (req, res) => 
+{
+  // Récupération des données envoyées dans le body de la requête
+  let {email,username, name, gender, age, city, sportsPlayed, level, reason, dayTime, notificationActive} = req.body
+
+  //verifier que tout les champs sont présents
+  if(checkBody(req.body, ["email","username","name","gender","age","city","sportsPlayed","level" ]))
+  {
+      //rechercher l' activité choisi dans la collection "activities"
+      Activity.findOne({title:sportsPlayed}).then(sportData=>
+      {
+        //verifier que l' activity a été bien trouvée
+        if(sportData)
+        {
+            //convertit un niveau de compétence en titre de niveau specifique
+            let levelTitle
+            if(level==="Aucune expérience")
+            {levelTitle = "Niveau 1"}
+            else if(level==="Débutant")
+            {levelTitle = "Niveau 3"}
+            else if(level==="Intermédiaire")
+            {levelTitle = "Niveau 5"}
+            else if(level==="Avancé")
+            {levelTitle = "Niveau 7"}
+            else
+            {
+              //reponse si le niveau n est pas trouvé
+              res.json({result:false, error: "level not found"})
+              return 
+            }
+
+            //recherche de l' id du niveau
+            let levelId
+            for(let Vlevel of sportData.levels)
+            {
+              if(Vlevel.title===levelTitle)
+              {
+                levelId = Vlevel._id
+              }
+            }
+
+
+           
+
+            //modification de user pour ajouter les données manquants
+            User.updateOne({email:email}, {username:username, name:name, gender:gender, age:age, city:city, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], level:levelId}).then(userData=>
+            {
+              //verifier que l' element user a été bien modifié
+              if(userData.modifiedCount>0)
+              { 
+                //recupérer le user modifié
+                User.findOne({email:email}).then(modifiedData=>
+                {
+                  //verifier si le user modifié a été bien trouvé
+                  if(modifiedData)
+                  {
+                    res.json({result:true, data:modifiedData})
+                  }
+                  else
+                  {
+                    //reponse si user modifié n' a pas été trouvé
+                     res.json({result:false, error: "modified user not updated"})
+                  }
+                })
+              }
+              else
+              {
+                //reponse si user n' a pas été modifié
+                 res.json({result:false, error: "user not updated"})
+              } 
+            })
+        }
+        else
+        {
+          //reponse si l' ectivity n est pas trouvée
+          res.json({result:false, error: "activity not found"})
+        }
+      })
+  }
+  else 
+  {
+     //reponse si absance du champ email ou sport 
+    res.json({result:false, error: " not found"})
+  }
+});
+
+//route pour tester la collection user
+router.post("/testUser", (req, res) => 
+{
+  let {admin, token, email, password, username, name, gender, age, coordName, coordType, coordLat, coordLon, city, notificationActive, photoUrl, level, levelTitle, xp, isSocialConnected, reason, dayTime, nbSessions, totalTime, nbEtaps} = req.body
+  let lastConnectionDate = new Date()
+  let creationDateDate = new Date()
+  let lastModifiedDate = new Date()
+
+  Activity.find().then(activityData=>
+  {
+    let activityDataID = []
+    for(let activity of activityData)
+    {
+      activityDataID.push(activity._id)
+
+    }
+
+    Medal.find().then(medalData=>
+    {
+        let medalDataID = []
+        for(let i=0; i<3; i++)
+        {
+          medalDataID.push(medalData[i]._id)
+
+        }
+        Activity.findOne({title:levelTitle}).then(levelData=>
+        {
+          let levelId
+          
+          for(let Vlevel of levelData.levels)
+          {
+            if(Vlevel.title===level)
+            {
+              levelId = Vlevel._id
+
+            }
+          }
+          //res.json({result:true, data:levelId})
+
+        
+            let testUser = new User(
+            {
+              admin:admin,
+              token:token,
+              email:email,
+              password:password,
+              username:username,
+              name:name,
+              gender:gender,
+              age:age,
+              coordinate:{name:coordName, location:{type:coordType, coordinates:[coordLat, coordLon]}},
+              city:city,
+              notificationActive:notificationActive,
+              photoUrl:photoUrl,
+              xp:xp,
+              isSocialConnected:isSocialConnected,
+              form:
+              {
+                reason:reason,
+                dayTime:dayTime,
+              },
+              stats:
+              {
+                nbSessions:nbSessions,
+                totalTime:totalTime,
+                nbEtaps:nbEtaps,
+                lastModified:lastModifiedDate,
+                creationDate:creationDateDate,
+                lastConnection:lastConnectionDate,
+              },
+              sportPlayed:activityDataID,
+              medals:medalDataID,
+              level:levelId, 
+
+              
+            })
+            testUser.save().then(data=>
+              {
+                res.json({result:true, data: data})
+              })
+        })
+    })
+  })
+});
+
+
 
 module.exports = router;
