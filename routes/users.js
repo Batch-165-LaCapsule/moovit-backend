@@ -37,6 +37,8 @@ router.post("/signup", (req, res) => {
         })
         .then((newDoc) => {
           //save pour les new users et renvoi un doc json
+
+          res.sendStatus(200)
           res.json({ result: true, token: newDoc.token }); //doc json qui mentionne que tout c'est bien passé et le num du token
         });
     } else {
@@ -81,6 +83,11 @@ router.post("/signin", (req, res) => {
       res.status(500).json({ error: "connection data base error " }); // Si une erreur survient lors de la sauvegarde du document
     });
 });
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
 // router.post('/form/p1', (req, res) => { //
 //   if (!checkBody(req.body, ['username', 'name'])) {
