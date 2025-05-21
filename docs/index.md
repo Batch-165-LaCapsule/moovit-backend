@@ -15,7 +15,7 @@ Divers outils et technologies seront présentées ici et documentées durant tou
 - Utilisation de Cloudinary (compte **deuhttaaq**) pour stocker et servir les assets.
 - Outils : `upload-front.js` et `list-images.js` pour l’upload & génération de galerie.
 - Documentation des routes API pour l’authentification et la récupération d’images.
-- Et bien d'autres choses à venir
+- Procédure d'upload sur cloudinary et de mise à jour de la galerie d'image dans le repo backend
 
 </div>
 
@@ -24,5 +24,6 @@ Divers outils et technologies seront présentées ici et documentées durant tou
 - [Galerie d’images](images-gallery.html)
 - [API Routes](routes.html)
 - [Objectif & Contexte](#projet-fin-de-batch)
+- [Procédure de mise à jour de la galerie d’images](procedure-galerie.md)
 
 ---
