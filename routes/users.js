@@ -247,15 +247,79 @@ router.post("/signin", (req, res) => {
 //   });
 // });
 
+//route geoloc
+router.post("/geoloc", (req, res) => 
+{
+  // Récupération des données envoyées dans le body de la requête
+  let {token, lat, lon} = req.body
+
+  //recherche de la ville via latitude et longitude en fasant une requete à l' api gratuite du gouv
+  fetch(`https://api-adresse.data.gouv.fr/reverse/?lat=${lat}&lon=${lon}`).then(r=>r.json()).then(data=>
+  {
+    //verifier que tout les champs sont présents
+    if(checkBody(req.body, ["token","lat", "lon"]))
+    {
+      if(data)
+      {
+       
+        //stockage de la ville dans la variable "city"
+          let city = data.features[1].properties.city
+        if( city)
+        {
+           //modification de user pour ajouter les coordonées et la ville
+          User.updateOne({token:token}, {city:city, coordinate:{name:city,location:{type:"Point",coordinates:[lon, lat]}}}).then(userData=>
+          {
+             //verifier que l' element user a été bien modifié
+              if(userData.modifiedCount>0)
+              {
+                res.json({result:true, data:userData})
+
+              }
+              else
+              {
+                //reponse si user n' a pas été modifié
+                 res.json({result:false, error: "user not updated"})
+              }
+            
+          })
+        }
+        else
+        {
+          //reponse si la ville n' a pas été trouvée
+          res.json({result:false, error: "city not found"})
+        }
+      
+      }
+      else
+      {
+        //reponse di les coordonees sont incorrects
+        res.json({result:false, error: "error lat or lon incorrect"})
+      }
+    }
+    else
+    {
+      //reponse si absance du champ
+      res.json({result:false, error: "entry not found"})
+    }
+   
+
+  }).catch(() => {
+      res.status(500).json({ error: "connection error " }); // Si une erreur survient lors de la requete
+    });
+ 
+
+
+})
+
 
 //Route onboarding
 router.post("/onboarding", (req, res) => 
 {
   // Récupération des données envoyées dans le body de la requête
-  let {email,username, name, gender, age, city, sportsPlayed, level, reason, dayTime, notificationActive} = req.body
+  let {token,username, name, gender, age, sportsPlayed, level, reason, dayTime, notificationActive} = req.body
 
   //verifier que tout les champs sont présents
-  if(checkBody(req.body, ["email","username","name","gender","age","city","sportsPlayed","level" ]))
+  if(checkBody(req.body, ["token","username","name","sportsPlayed","level" ]))
   {
       //rechercher l' activité choisi dans la collection "activities"
       Activity.findOne({title:sportsPlayed}).then(sportData=>
@@ -294,7 +358,7 @@ router.post("/onboarding", (req, res) =>
            
 
             //modification de user pour ajouter les données manquants
-            User.updateOne({email:email}, {username:username, name:name, gender:gender, age:age, city:city, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], level:levelId}).then(userData=>
+            User.updateOne({token:token}, {username:username, name:name, gender:gender, age:age, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], level:levelId}).then(userData=>
             {
               //verifier que l' element user a été bien modifié
               if(userData.modifiedCount>0)
@@ -330,8 +394,8 @@ router.post("/onboarding", (req, res) =>
   }
   else 
   {
-     //reponse si absance du champ email ou sport 
-    res.json({result:false, error: " not found"})
+     //reponse si absance du champ
+    res.json({result:false, error: "entry not found"})
   }
 });
 
