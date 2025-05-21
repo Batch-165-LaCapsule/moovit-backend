@@ -18,27 +18,27 @@ router.post("/signup", (req, res) => {
   // Check if the user has not already been registered
   User.findOne({ email: req.body.email }).then((data) => {
     //recherche dans la db User UN seul User avec le nom en param
-    const emailRegex = /^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i;
-    console.log(emailRegex.test(req.body.email));
+    const emailRegex = /^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i;//regex pattern d'email (([\w.-]=raccourci de [a-zA-Z0-9_.-])) @ et 2caractere apres le .
+    // console.log(emailRegex.test(req.body.email));
 
-    if (data === null && emailRegex.test(req.body.email)) {
+    if (data === null && emailRegex.test(req.body.email)) { //si il n'y a pas de data reçu ou que le regex .test renvoie true
       const hash = bcrypt.hashSync(req.body.password, 10); // cryptage du password (hashé 10x)
 
-      const newUser = new User({
-        email: req.body.email,
+      const newUser = new User({ //creation d'un new user 
+        email: req.body.email, //recuperation du mail en db
         password: hash, // cryptage du password (hashé 10x)
         token: uid2(32), //token de 32 caracteres
       });
 
       newUser
-        .save()
-        .catch((error) => {
+        .save() //methode crud create avec .save de new user
+        .catch((error) => { 
           res.status(500).json({ error: "error while saving doc" }); // Si une erreur survient lors de la sauvegarde du document
         })
         .then((newDoc) => {
           //save pour les new users et renvoi un doc json
 
-          res.sendStatus(200)
+          res.sendStatus(200) //renvoi un code de confirmation 200 si tout c'est bien passé a la save
           res.json({ result: true, token: newDoc.token }); //doc json qui mentionne que tout c'est bien passé et le num du token
         });
     } else {
@@ -56,15 +56,12 @@ router.post("/signin", (req, res) => {
     return;
   }
 
-  User.findOne({ email: req.body.email })
+  User.findOne({ email: req.body.email }) //recherche en db de l email
     .then((data) => {
-      // const emailRegex = /^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i;
-      // console.log(emailRegex.test(req.body.email));
-
       //recherche dans la db User UN seul User avec le nom en param et renvoi des donné le consernant
       if (data && bcrypt.compareSync(req.body.password, data.password)) {
         //si data et password rentré et crypté est identique au password en db
-        res.json({ 
+        res.json({   //renvoi de toute ces info de la bdd au front
             result: true, 
             token: data.token, 
             sportPlayed: data.sportPlayed,

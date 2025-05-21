@@ -18,13 +18,11 @@
 //         error: error
 //     }));
 // });
+////////////////si dessus code pour api///////////////////////////
+
+/////////////////si dessous le code du fichier index//////////////
 var express = require('express');
 var router = express.Router();
-
-
-// const apiRouter = require('')
-
-
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
