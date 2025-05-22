@@ -13,17 +13,17 @@ Divers outils et technologies seront présentées ici et documentées durant tou
 **Contexte** :
 
 - Utilisation de Cloudinary (compte **deuhttaaq**) pour stocker et servir les assets.
-- Outils : `upload-front.js` et `list-images.js` pour l’upload & génération de galerie.
-- Documentation des routes API pour l’authentification et la récupération d’images.
 - Procédure d'upload sur cloudinary et de mise à jour de la galerie d'image dans le repo backend
+- Documentation des routes API pour l’authentification et la récupération d’images via Swagger
+- Appel à une api externe (https://wttr.in/nice) pour récuperer la météo de l'utilisateur géolocalisé
 
 </div>
 
 ## Sommaire
 
-- [Galerie d’images](images-gallery.html)
-- [API Routes](routes.html)
 - [Objectif & Contexte](#projet-fin-de-batch)
+- [Galerie d’images](images-gallery.html)
+- [Accéder à la doc de l'API](http://localhost:3000/api-docs)
 - [Procédure de mise à jour de la galerie d’images](procedure-galerie.md)
 
 ---
