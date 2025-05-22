@@ -23,7 +23,7 @@ Divers outils et technologies seront présentées ici et documentées durant tou
 
 - [Objectif & Contexte](#projet-fin-de-batch)
 - [Galerie d’images](images-gallery.html)
-- [Accéder à la doc de l'API](http://localhost:3000/api-docs)
+- [Accéder à la doc de l'API](https://moovit-backend.onrender.com/api-docs)
 - [Procédure de mise à jour de la galerie d’images](procedure-galerie.md)
 
 ---
