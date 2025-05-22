@@ -43,6 +43,8 @@ const userSchema = mongoose.Schema(
     form:formSchema,
     stats:statSchema,
     medals:{type:[{ type: mongoose.Schema.Types.ObjectId, ref: 'medals' }], default:[]},
+    height:Number,
+    weight:Number,
    
 
  
