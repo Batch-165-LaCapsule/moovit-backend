@@ -4,6 +4,7 @@ require("../models/connection"); //import de la connection string
 const User = require("../models/users"); //import du schema user
 const Activity = require("../models/activities"); //import du schema activity
 const Medal = require("../models/medals")
+const Level = require("../models/activities")
 
 const { checkBody } = require("../modules/checkBody"); //import de la fonction checkBody qui verifie que tout le champs soit ni null ni une string vide
 const uid2 = require("uid2"); // module qui permet de genere une num de token
@@ -293,7 +294,6 @@ router.post("/geoloc", (req, res) =>
                 //reponse si user n' a pas été modifié
                  res.json({result:false, error: "user not updated"})
               }
-            
           })
         }
         else
@@ -357,13 +357,13 @@ router.post("/onboarding", (req, res) =>
               return 
             }
 
-            //recherche de l' id du niveau
+            //recherche du title du niveau
             let levelId
             for(let Vlevel of sportData.levels)
             {
               if(Vlevel.title===levelTitle)
               {
-                levelId = Vlevel._id
+                levelId = Vlevel.title
               }
             }
 
@@ -377,12 +377,37 @@ router.post("/onboarding", (req, res) =>
               if(userData.modifiedCount>0)
               { 
                 //recupérer le user modifié
-                User.findOne({email:email}).then(modifiedData=>
+                User.findOne({token:token}).then(modifiedData=>
                 {
                   //verifier si le user modifié a été bien trouvé
                   if(modifiedData)
                   {
-                    res.json({result:true, data:modifiedData})
+                    //rechercher l' activité choisi dans la collection "activities"
+                    Activity.findOne({title:sportsPlayed}).then(findActivityData=>
+                    {
+                      //verifier que l' activity a été bien trouvée
+                      if(findActivityData)
+                      {
+                        //recherche du "level" dans la collection "activities"
+                        let activityLevel
+                        for(let Vlevel of findActivityData.levels)
+                        {
+                          if(Vlevel.title===modifiedData.level)
+                          {
+                            activityLevel=Vlevel
+                          }
+                        }
+                        //reponse avec les donné du "user" et le "level"
+                        res.json({result:true,dataUser:modifiedData, dataLevel:activityLevel})
+                      }
+                      else
+                      {
+                        //reponse si l' ectivity n est pas trouvée
+                        res.json({result:false, error: "activity not found"})
+                      }
+
+                    })
+                    
                   }
                   else
                   {
@@ -445,7 +470,7 @@ router.post("/testUser", (req, res) =>
           {
             if(Vlevel.title===level)
             {
-              levelId = Vlevel._id
+              levelId = Vlevel.title
 
             }
           }

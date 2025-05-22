@@ -36,7 +36,7 @@ const userSchema = mongoose.Schema(
     city:String,
     notificationActive:Boolean,
     photoUrl:String,
-    level:{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' },
+    level:String,
     xp:{type:Number, default:0},
     isSocialConnected:Boolean,
     sportPlayed:[{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' }],
