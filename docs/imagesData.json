@@ -1880,24 +1880,25 @@
     "rounded_thumb_max_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_thumb,g_auto,w_200,h_200,r_max/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png"
   },
   {
-    "url": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png",
-    "original_url": "https://res.cloudinary.com/deuhttaaq/image/upload/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png",
-    "alt": "projectFinDeBatch/front/images/default-profile_exgh99",
+    "url": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png",
+    "original_url": "https://res.cloudinary.com/deuhttaaq/image/upload/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png",
+    "alt": "projectFinDeBatch/front/images/default-profile-male_exgh99",
     "tags": [
       "icon",
-      "moovetiapp"
+      "moovetiapp",
+      "natation"
     ],
     "format": "png",
     "width": 1024,
     "height": 1024,
     "bytes": 1502280,
     "created_at": "2025-05-21T11:18:37Z",
-    "thumb_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_thumb,g_auto,w_200,h_200/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png",
-    "square_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_fill,g_auto,w_400,h_400/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png",
-    "ultra_thumb_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_thumb,g_auto,w_80,h_80/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png",
-    "enhanced_url": "https://res.cloudinary.com/deuhttaaq/image/upload/e_auto_enhance/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png",
-    "rounded_thumb_20_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_thumb,g_auto,w_200,h_200,r_20/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png",
-    "rounded_thumb_max_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_thumb,g_auto,w_200,h_200,r_max/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png"
+    "thumb_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_thumb,g_auto,w_200,h_200/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png",
+    "square_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_fill,g_auto,w_400,h_400/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png",
+    "ultra_thumb_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_thumb,g_auto,w_80,h_80/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png",
+    "enhanced_url": "https://res.cloudinary.com/deuhttaaq/image/upload/e_auto_enhance/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png",
+    "rounded_thumb_20_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_thumb,g_auto,w_200,h_200,r_20/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png",
+    "rounded_thumb_max_url": "https://res.cloudinary.com/deuhttaaq/image/upload/c_thumb,g_auto,w_200,h_200,r_max/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png"
   },
   {
     "url": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png",
