@@ -4,6 +4,10 @@ info:
   version: 1.0.0
   description: Documentation automatique des endpoints API de Mooveit
 
+servers:
+  - url: https://moovit-backend.onrender.com
+  - url: http://localhost:3000
+
 paths:
   /api/users/signup:
     post:
