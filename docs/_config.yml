@@ -1,5 +1,5 @@
-title: Projet de Fin de Batch
-baseurl: "/projetDeFinDeBatch"
-url: "https://StefPoss.github.io"
+title: MooveIt Backend (ou ce que tu veux)
+baseurl: "/moovit-backend"
+url: "https://batch-165-lacapsule.github.io"
 markdown: kramdown
 # trigger rebuild
