@@ -266,8 +266,9 @@ router.post("/geoloc", (req, res) =>
   let {token, lat, lon} = req.body
 
   //recherche de la ville via latitude et longitude en fasant une requete à l' api gratuite du gouv
-  fetch(`https://api-adresse.data.gouv.fr/reverse/?lat=${lat}&lon=${lon}`).then(r=>r.json()).then(data=>
+  fetch(`https://wttr.in/${lat},${lon}?format=j1`).then(r=>r.json()).then(data=>
   {
+   
     //verifier que tout les champs sont présents
     if(checkBody(req.body, ["token","lat", "lon"]))
     {
@@ -275,7 +276,7 @@ router.post("/geoloc", (req, res) =>
       {
        
         //stockage de la ville dans la variable "city"
-          let city = data.features[1].properties.city
+          let city = data.nearest_area[0].areaName[0].value
         if( city)
         {
            //modification de user pour ajouter les coordonées et la ville
