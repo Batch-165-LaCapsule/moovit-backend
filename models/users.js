@@ -2,7 +2,8 @@
 const mongoose = require('mongoose');
 
 //Schema du model de la Souscollection "Stats" contenus dans la collection "Users"
-const statSchema = mongoose.Schema({
+const statSchema = mongoose.Schema(
+{
    nbSessions:Number,
    totalTime:Number,
    lastConnection:Date,
@@ -13,16 +14,15 @@ const statSchema = mongoose.Schema({
 
 //Schema du model de la Souscollection "form" contenus dans la collection "Users"
 
-const formSchema= mongoose.Schema({
+const formSchema= mongoose.Schema(
+{
     reason:String,
     dayTime:String,
-
 })
 
 //Schema du model de la Collection "Users"
 const userSchema = mongoose.Schema(
 {
-
     admin:{type:Boolean,default:false},
     token:{type:String, required:true},
     email:{type:String, required:true},
@@ -45,9 +45,6 @@ const userSchema = mongoose.Schema(
     medals:{type:[{ type: mongoose.Schema.Types.ObjectId, ref: 'medals' }], default:[]},
     height:Number,
     weight:Number,
-   
-
- 
 });
 
 
