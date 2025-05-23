@@ -6,6 +6,10 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
   <b>Filtres par tag :</b>
   
     <label style="margin-right: 10px;">
+      <input type="checkbox" class="gallery-tag-filter" value="default"> default
+    </label>
+  
+    <label style="margin-right: 10px;">
       <input type="checkbox" class="gallery-tag-filter" value="female"> female
     </label>
   
@@ -57,6 +61,28 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
 </style>
 <div class="gallery">
 
+  <div class="gallery-card" data-tags="default,icon,moovetiapp,profile">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png" alt="projectFinDeBatch/front/images/default-profile_cltqmm" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : default, icon, moovetiapp, profile</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
   <div class="gallery-card" data-tags="female,icon,moovetiapp,profile">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747993035/projectFinDeBatch/front/images/default-profile-female_kn6nlb.png" alt="projectFinDeBatch/front/images/default-profile-female_kn6nlb" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747993035/projectFinDeBatch/front/images/default-profile-female_kn6nlb.png">
     <div class="cloud-info">
