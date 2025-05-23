@@ -6,11 +6,19 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
   <b>Filtres par tag :</b>
   
     <label style="margin-right: 10px;">
+      <input type="checkbox" class="gallery-tag-filter" value="female"> female
+    </label>
+  
+    <label style="margin-right: 10px;">
       <input type="checkbox" class="gallery-tag-filter" value="icon"> icon
     </label>
   
     <label style="margin-right: 10px;">
       <input type="checkbox" class="gallery-tag-filter" value="logo"> logo
+    </label>
+  
+    <label style="margin-right: 10px;">
+      <input type="checkbox" class="gallery-tag-filter" value="male"> male
     </label>
   
     <label style="margin-right: 10px;">
@@ -29,6 +37,10 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
       <input type="checkbox" class="gallery-tag-filter" value="padel"> padel
     </label>
   
+    <label style="margin-right: 10px;">
+      <input type="checkbox" class="gallery-tag-filter" value="profile"> profile
+    </label>
+  
 </div>
 <style>
   .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1200px; margin: 2rem auto; }
@@ -45,24 +57,24 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
 </style>
 <div class="gallery">
 
-  <div class="gallery-card" data-tags="icon,moovetiapp,natation">
-    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747896061/projectFinDeBatch/front/images/default-profile-female_errlx6.png" alt="projectFinDeBatch/front/images/default-profile-female_errlx6" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747896061/projectFinDeBatch/front/images/default-profile-female_errlx6.png">
+  <div class="gallery-card" data-tags="female,icon,moovetiapp,profile">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747993035/projectFinDeBatch/front/images/default-profile-female_kn6nlb.png" alt="projectFinDeBatch/front/images/default-profile-female_kn6nlb" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747993035/projectFinDeBatch/front/images/default-profile-female_kn6nlb.png">
     <div class="cloud-info">
-      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.4 Mo</b>
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, moovetiapp, natation</div>
+    <div class="cloud-tags">Tags : female, icon, moovetiapp, profile</div>
     <div class="gallery-actions">
-      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747896061/projectFinDeBatch/front/images/default-profile-female_errlx6.png', '_blank')">Ouvrir</button>
-      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747896061/projectFinDeBatch/front/images/default-profile-female_errlx6.png">Copier URL</button>
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747993035/projectFinDeBatch/front/images/default-profile-female_kn6nlb.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747993035/projectFinDeBatch/front/images/default-profile-female_kn6nlb.png">Copier URL</button>
       <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
       <button class="filter-btn" data-filter="none">Couleurs normales</button>
     </div>
     
       <div class="gallery-variant">
         Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747896061/projectFinDeBatch/front/images/default-profile-female_errlx6.png" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747896061/projectFinDeBatch/front/images/default-profile-female_errlx6.png" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747896061/projectFinDeBatch/front/images/default-profile-female_errlx6.png" target="_blank">PNG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747993035/projectFinDeBatch/front/images/default-profile-female_kn6nlb.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747993035/projectFinDeBatch/front/images/default-profile-female_kn6nlb.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747993035/projectFinDeBatch/front/images/default-profile-female_kn6nlb.png" target="_blank">PNG</a>
       </div>
     
   </div>
@@ -177,12 +189,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,moovetiapp,natation">
+  <div class="gallery-card" data-tags="icon,male,moovetiapp,profile">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png" alt="projectFinDeBatch/front/images/default-profile-male_exgh99" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.4 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, moovetiapp, natation</div>
+    <div class="cloud-tags">Tags : icon, male, moovetiapp, profile</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile-male_exgh99.png">Copier URL</button>
