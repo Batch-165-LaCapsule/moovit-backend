@@ -16,6 +16,7 @@
     "express-fileupload": "^1.5.1",
     "mongoose": "^8.15.0",
     "morgan": "~1.9.1",
+    "newrelic": "^12.19.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
     "uid2": "^1.0.0"
