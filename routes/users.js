@@ -78,7 +78,7 @@ router.post("/signin", (req, res) => {
         //   photoUrl: data.photoUrl,
         // }); //renvoi un json avec un resultat true et le token
 
-        res.json({result:true, token:data.token})//renvoi de la reponse si l'authentification a réussi
+        res.json({result:true, token:data.token, sport: data.sportPlayed})//renvoi de la reponse si l'authentification a réussi
 
       } else {
         res.json({ result: false, error: "User not found or wrong password" }); // renvoi un json resultat false et un msg error
@@ -362,7 +362,7 @@ router.post("/dashboard", (req, res) =>
                 }
                 
                 //requete vers l' api meteo
-                fetch(`https://wttr.in/${userData.coordinate.location.coordinates[1]},${userData.coordinate.location.coordinates[0]}?format=j1`).then(r=>r.json()).then(meteoData=>
+                fetch(`https://wttr.in/${userData.city}?format=j1`).then(r=>r.json()).then(meteoData=>
                 {
                   //stocker les données meteo
                   let meteoDesc = meteoData.current_condition[0].weatherDesc[0].value
@@ -412,10 +412,10 @@ router.post("/dashboard", (req, res) =>
 router.post("/onboarding", (req, res) => 
 {
   // Récupération des données envoyées dans le body de la requête
-  let {token,username, name, gender, age, sportsPlayed, level, reason, dayTime, notificationActive, height, weight} = req.body
+  let {token,username, name, gender, age, sportsPlayed, level, reason, dayTime, notificationActive, height, weight, city} = req.body
 
   //verifier que tout les champs sont présents
-  if(checkBody(req.body, ["token","username","name","sportsPlayed","level" ]))
+  if(checkBody(req.body, ["token","username","name","sportsPlayed","level","city" ]))
   {
       //rechercher l' activité choisi dans la collection "activities"
       Activity.findOne({title:sportsPlayed}).then(sportData=>
@@ -451,7 +451,7 @@ router.post("/onboarding", (req, res) =>
             }
 
             //modification de user pour ajouter les données manquants
-            User.updateOne({token:token}, {username:username, name:name, gender:gender, age:age, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], level:levelId, height:height, weight:weight,}).then(userData=>
+            User.updateOne({token:token}, {username:username, name:name, gender:gender, age:age, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], level:levelId, height:height, weight:weight,city:city.toLowerCase()}).then(userData=>
             {
               //verifier que l' element user a été bien modifié
               if(userData.modifiedCount>0)

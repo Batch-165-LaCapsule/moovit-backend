@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 //Schema du model de la Souscollection "Stats" contenus dans la collection "Users"
 const statSchema = mongoose.Schema(
 {
-   nbSessions:Number,
-   totalTime:Number,
+   nbSessions:{type:Number, default:0},
+   totalTime:{type:Number, default:0},
    lastConnection:Date,
    nbEtaps:Number,
    creationDate:Date,

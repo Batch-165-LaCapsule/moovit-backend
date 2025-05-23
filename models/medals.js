@@ -6,6 +6,7 @@ const medalSchema = mongoose.Schema(
 {
     title: String,
     image: String,
+    xp:{type:Number, default:10},
     activity:{ type: mongoose.Schema.Types.ObjectId, ref: 'activities' }
 
  
