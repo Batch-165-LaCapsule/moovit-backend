@@ -4,7 +4,6 @@ require("../models/connection"); //import de la connection string
 const User = require("../models/users"); //import du schema user
 const Activity = require("../models/activities"); //import du schema activity
 const Medal = require("../models/medals")
-const Level = require("../models/activities")
 
 const { checkBody } = require("../modules/checkBody"); //import de la fonction checkBody qui verifie que tout le champs soit ni null ni une string vide
 const uid2 = require("uid2"); // module qui permet de genere une num de token
@@ -66,17 +65,21 @@ router.post("/signin", (req, res) => {
       //recherche dans la db User UN seul User avec le nom en param et renvoi des donné le consernant
       if (data && bcrypt.compareSync(req.body.password, data.password)) {
         //si data et password rentré et crypté est identique au password en db
-        res.json({
-          //renvoi de toute ces info de la bdd au front
-          result: true,
-          token: data.token,
-          sportPlayed: data.sportPlayed,
-          username: data.username,
-          admin: data.admin,
-          xp: data.xp,
-          level: data.level,
-          photoUrl: data.photoUrl,
-        }); //renvoi un json avec un resultat true et le token
+        
+        // res.json({
+        //   //renvoi de toute ces info de la bdd au front
+        //   result: true,
+        //   token: data.token,
+        //   sportPlayed: data.sportPlayed,
+        //   username: data.username,
+        //   admin: data.admin,
+        //   xp: data.xp,
+        //   level: data.level,
+        //   photoUrl: data.photoUrl,
+        // }); //renvoi un json avec un resultat true et le token
+
+        res.json({result:true, token:data.token, sport: data.sportPlayed})//renvoi de la reponse si l'authentification a réussi
+
       } else {
         res.json({ result: false, error: "User not found or wrong password" }); // renvoi un json resultat false et un msg error
       }
@@ -325,14 +328,94 @@ router.post("/geoloc", (req, res) =>
 })
 
 
+//Route dashbord
+router.post("/dashboard", (req, res) => 
+{
+  // Récupération des données envoyées dans le body de la requête
+  let {token} = req.body
+
+  //verifier que tout les champs sont présents
+  if(checkBody(req.body, ["token"]))
+  {
+      //recupérer le user 
+      User.findOne({token:token}).populate("sportPlayed", "title image").then(userData=>{
+
+        //verifier si le user modifié a été bien trouvé
+        if(userData)
+        {
+           //rechercher l' activité choisi dans la collection "activities"
+            Activity.findOne({title:userData.sportPlayed[0].title}).then(activityData=>
+            {
+              // res.json({result:true, data:activityData})
+
+              //verifier que l' activity a été bien trouvée
+              if(activityData)
+              {
+                //recherche le "level" dans la collection "activities"
+                let activityLevel
+                for(let Vlevel of activityData.levels)
+                {
+                  if(Vlevel.title===userData.level)
+                  {
+                     activityLevel=Vlevel
+                  }
+                }
+                
+                //requete vers l' api meteo
+                fetch(`https://wttr.in/${userData.city}?format=j1`).then(r=>r.json()).then(meteoData=>
+                {
+                  //stocker les données meteo
+                  let meteoDesc = meteoData.current_condition[0].weatherDesc[0].value
+
+                   //reponse avec les données du "user", "level" et meteo
+                  res.json({result:true,dataUser:userData, dataLevel:activityLevel, dataMeteo:meteoDesc})
+                }) 
+                .catch((e) => 
+                {
+                  // Si une erreur survient lors de la requete API
+                  res.json({result:true, dataUser:userData, dataLevel:activityLevel, dataMeteo:"Meteo API error", error:e})
+                  //res.status(500).json({ message: "Meteo API error", error: e}) 
+                })
+
+              }
+              else
+              {
+                  //reponse si l' ectivity n est pas trouvée
+                  res.json({result:false, error: "activity not found"})
+              }
+            })
+        }
+        else
+        {
+          //reponse si user n' a pas été trouvé
+          res.json({result:false, error: "user not found"})
+        }
+      })
+  }
+  else 
+  {
+     //reponse si absance du champ
+    res.json({result:false, error: "entry not found"})
+  }
+});
+
+
+
+
+
+
+
+
+
+
 //Route onboarding
 router.post("/onboarding", (req, res) => 
 {
   // Récupération des données envoyées dans le body de la requête
-  let {token,username, name, gender, age, sportsPlayed, level, reason, dayTime, notificationActive} = req.body
+  let {token,username, name, gender, age, sportsPlayed, level, reason, dayTime, notificationActive, height, weight, city} = req.body
 
   //verifier que tout les champs sont présents
-  if(checkBody(req.body, ["token","username","name","sportsPlayed","level" ]))
+  if(checkBody(req.body, ["token","username","name","sportsPlayed","level","city" ]))
   {
       //rechercher l' activité choisi dans la collection "activities"
       Activity.findOne({title:sportsPlayed}).then(sportData=>
@@ -367,54 +450,13 @@ router.post("/onboarding", (req, res) =>
               }
             }
 
-
-           
-
             //modification de user pour ajouter les données manquants
-            User.updateOne({token:token}, {username:username, name:name, gender:gender, age:age, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], level:levelId}).then(userData=>
+            User.updateOne({token:token}, {username:username, name:name, gender:gender, age:age, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], level:levelId, height:height, weight:weight,city:city.toLowerCase()}).then(userData=>
             {
               //verifier que l' element user a été bien modifié
               if(userData.modifiedCount>0)
-              { 
-                //recupérer le user modifié
-                User.findOne({token:token}).then(modifiedData=>
-                {
-                  //verifier si le user modifié a été bien trouvé
-                  if(modifiedData)
-                  {
-                    //rechercher l' activité choisi dans la collection "activities"
-                    Activity.findOne({title:sportsPlayed}).then(findActivityData=>
-                    {
-                      //verifier que l' activity a été bien trouvée
-                      if(findActivityData)
-                      {
-                        //recherche du "level" dans la collection "activities"
-                        let activityLevel
-                        for(let Vlevel of findActivityData.levels)
-                        {
-                          if(Vlevel.title===modifiedData.level)
-                          {
-                            activityLevel=Vlevel
-                          }
-                        }
-                        //reponse avec les donné du "user" et le "level"
-                        res.json({result:true,dataUser:modifiedData, dataLevel:activityLevel})
-                      }
-                      else
-                      {
-                        //reponse si l' ectivity n est pas trouvée
-                        res.json({result:false, error: "activity not found"})
-                      }
-
-                    })
-                    
-                  }
-                  else
-                  {
-                    //reponse si user modifié n' a pas été trouvé
-                     res.json({result:false, error: "modified user not updated"})
-                  }
-                })
+              { //reponse si l'authentification a réussi
+                res.json({result:true})
               }
               else
               {
