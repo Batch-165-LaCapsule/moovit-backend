@@ -1,3 +1,4 @@
+require("newrelic")
 require("dotenv").config()
 require("./models/connection")
 var express = require("express")
