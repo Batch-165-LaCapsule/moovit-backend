@@ -1,4 +1,11 @@
+---
+layout: default
+title: Préocédure de mise à jour de la galerie Cloudinary
+---
+
 # Ajout et upload d’images locales vers Cloudinary
+
+<div class="content-center" markdown="1">
 
 Pour ajouter de nouvelles images dans la galerie, il faut d’abord :
 
@@ -71,4 +78,4 @@ Pour ajouter de nouvelles images dans la galerie, il faut d’abord :
 - Adapter la procédure si les noms de fichiers ou la structure changent dans le projet.
 - Consulter ce fichier `README.md` pour toute mise à jour ou information complémentaire sur l’utilisation des scripts de gestion de la galerie.
 
----
+</div>

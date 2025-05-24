@@ -2,4 +2,4 @@ title: MooveIt Backend
 baseurl: "/moovit-backend"
 url: "https://batch-165-lacapsule.github.io"
 markdown: kramdown
-# trigger rebuild
+theme: minima

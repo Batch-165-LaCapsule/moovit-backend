@@ -11,19 +11,76 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
-  background: #ececf1;
-  color: #24292e;
-  padding: 16px;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #bebec1;
+  color: #ffffff;
 }
 
 /* Colonne centrale un peu atténuée */
 .container {
-  background: #f5f5f7;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 16px;
+  background: #a787f1;
+  max-width: 65%;
+  min-width: 0;
+  min-height: 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.11);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5vh 0;
+  padding: 24px 18px 18px 18px;
   position: relative;
-  border-radius: 16px;
+  border-radius: 22px;
+  color: #ffffff;
+  margin: 5vh auto;
+  padding: 32px 32px 24px 32px;
+}
+.container pre {
+  background: #fff8;
+  color: #222;
+  border-radius: 6px;
+  padding: 10px 18px;
+  overflow-x: auto;
+  margin: 18px 0;
+  max-width: 100%;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.container h1,
+.container h2,
+.container h3 {
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+.container h1:first-child {
+  margin-top: 0;
+}
+
+.content-center {
+  background: #8f74cf;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  max-width: 90%;
+  padding: 3rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.11);
+  border-radius: 22px;
+}
+
+.container ul {
+  list-style-type: disc;
+}
+
+.container ol {
+  list-style-type: decimal;
 }
 
 /* HEADER & NAV */
@@ -34,7 +91,7 @@ h1,
 h2,
 h3 {
   margin-bottom: 16px;
-  color: #111111;
+  color: #ffffff;
 }
 header nav {
   display: flex;
@@ -44,7 +101,7 @@ header nav {
 }
 header nav a {
   position: relative;
-  color: #f0b429;
+  color: #ffffff;
   text-decoration: none;
   padding: 0 6px;
 }
@@ -58,18 +115,59 @@ header nav a:first-child::before {
   content: "";
 }
 a {
-  color: #f0b429;
+  color: #ffffff;
   text-decoration: none;
+  transition: color 0.2s;
 }
 a:hover {
-  text-decoration: underline;
+  color: #ffe087;
+}
+
+.container ul,
+.container ol {
+  margin-left: 2em; /* Indente les listes */
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+.container li {
+  margin-bottom: 0.5em;
+}
+
+.container pre,
+.container code {
+  font-family: "Fira Mono", "Consolas", "Menlo", monospace;
+  font-size: 1.1em;
+}
+
+.container pre {
+  background: #9072c4; /* Violet un peu plus sombre, pas blanc ni trop pastel */
+  color: #f3eaff; /* Presque blanc, bon contraste sur violet */
+  border-radius: 12px;
+  padding: 8px 18px; /* Réduit le padding vertical et horizontal */
+  margin: 16px 0;
+  overflow-x: auto;
+  max-width: 90%;
+  box-shadow: 0 2px 8px #4e226133; /* Optionnel, léger relief */
+  font-size: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container code {
+  background: #c7b4e6; /* Un fond légèrement plus sombre pour le inline */
+  color: #471b7a;
+  border-radius: 5px;
+  padding: 1px 6px;
+  font-size: 1em;
 }
 
 footer {
   margin-top: 40px;
   text-align: center;
   font-size: 0.9rem;
-  color: #666666;
+  color: #969696;
 }
 
 /* TOGGLE SWITCH */
@@ -87,7 +185,7 @@ footer {
   height: 30px;
   position: relative;
   border-radius: 15px;
-  background: #ddd;
+  background: #ffffff;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -98,7 +196,7 @@ footer {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: white;
+  background: rgb(196, 196, 196);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
@@ -113,7 +211,7 @@ footer {
   justify-content: space-between;
   padding: 0 6px;
   font-size: 14px;
-  color: #666666;
+  color: #999999;
 }
 .icon {
   pointer-events: none;

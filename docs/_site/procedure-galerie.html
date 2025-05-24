@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Préocédure de mise à jour de la galerie Cloudinary — MooveIt Backend</title>
+    <link rel="stylesheet" href="/moovit-backend/assets/css/style.css" />
+    <link rel="stylesheet" href="/moovit-backend/assets/css/dark.css" />
+    <link
+      rel="icon"
+      href="/moovit-backend/assets/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/moovit-backend/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/moovit-backend/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/moovit-backend/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/moovit-backend/assets/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Bouton toggle dark/light mode ++ -->
+      <div class="toggle-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <label for="theme-toggle" class="switch-label">
+          <span class="switch-thumb"></span>
+          <span class="switch-track">
+            <span class="icon light">☀️</span>
+            <span class="icon dark">🌙</span>
+          </span>
+        </label>
+      </div>
+
+      <header>
+        <h1><a href="/moovit-backend/">MooveIt Backend</a></h1>
+        <nav>
+          <a href="/moovit-backend/">Accueil</a>
+          <a href="/moovit-backend/images-gallery.html">Galerie</a>
+          <a href="https://moovit-backend.onrender.com/api-docs" target="_blank"
+            >Doc API Swagger</a
+          >
+          <a href="/moovit-backend/procedure-galerie.html"
+            >Mise à jour de la gallerie</a
+          >
+        </nav>
+      </header>
+
+      <main><h1 id="ajout-et-upload-dimages-locales-vers-cloudinary">Ajout et upload d’images locales vers Cloudinary</h1>
+
+<div class="content-center">
+
+  <p>Pour ajouter de nouvelles images dans la galerie, il faut d’abord :</p>
+
+  <ol>
+    <li><strong>Déposer les images à uploader</strong> dans le dossier :<br />
+<code class="language-plaintext highlighter-rouge">docs/assets/images/</code></li>
+    <li><strong>Lancer le script d’upload</strong> depuis le dossier <code class="language-plaintext highlighter-rouge">scripts/</code> :
+      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node upload-front.mjs
+</code></pre></div>      </div>
+      <ul>
+        <li>Ce script parcourt tous les fichiers images du dossier ci-dessus (formats supportés : avif, jpg, png, webp)</li>
+        <li>Chaque image est uploadée sur Cloudinary avec un identifiant basé sur son chemin relatif</li>
+        <li>À la fin de l’upload, les URLs Cloudinary seront utilisées par la procédure de génération de la galerie</li>
+      </ul>
+    </li>
+  </ol>
+
+  <p><strong>Remarque :</strong></p>
+
+  <ul>
+    <li>Vérifier que le fichier <code class="language-plaintext highlighter-rouge">.env</code> contient bien les identifiants Cloudinary (voir la section suivante)</li>
+    <li>Si des images portent le même nom que d’autres déjà présentes sur Cloudinary, elles seront écrasées sur Cloudinary (vérifier les doublons)</li>
+    <li>Il est recommandé de lancer ensuite la procédure d’actualisation de la galerie :
+      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node run_doc.mjs
+</code></pre></div>      </div>
+    </li>
+  </ul>
+
+  <hr />
+
+  <h1 id="procdure-automatise-de-mise--jour-de-la-galerie-dimages">Procédure automatisée de mise à jour de la galerie d’images</h1>
+
+  <blockquote>
+    <p><strong>Important :</strong><br />
+Toute la procédure est désormais automatisée.<br />
+<strong>Il suffit de lancer la commande suivante depuis le dossier <code class="language-plaintext highlighter-rouge">/scripts</code> du projet :</strong></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node run_doc.mjs
+</code></pre></div>    </div>
+
+    <p>Cette commande va exécuter dans l’ordre :</p>
+
+    <ul>
+      <li>La récupération des images Cloudinary et la génération du fichier <code class="language-plaintext highlighter-rouge">docs/imagesData.json</code></li>
+      <li>La génération de la galerie Markdown <code class="language-plaintext highlighter-rouge">docs/images-gallery.md</code></li>
+      <li>L’ajout automatique des fichiers générés à Git et un commit</li>
+    </ul>
+
+    <p>Plus besoin de lancer les scripts individuellement ni de faire le commit à la main.</p>
+  </blockquote>
+
+  <hr />
+
+  <h2 id="dtail-de-la-procdure">Détail de la procédure</h2>
+
+  <ol>
+    <li>
+      <p><strong>Vérifier que le fichier <code class="language-plaintext highlighter-rouge">.env</code> est bien configuré</strong> avec les clés Cloudinary (<code class="language-plaintext highlighter-rouge">CLOUDINARY_CLOUD_NAME</code>, <code class="language-plaintext highlighter-rouge">CLOUDINARY_API_KEY</code>, <code class="language-plaintext highlighter-rouge">CLOUDINARY_API_SECRET</code>), placées à la racine du projet ou dans <code class="language-plaintext highlighter-rouge">/scripts</code>.</p>
+    </li>
+    <li>
+      <p><strong>Depuis le dossier <code class="language-plaintext highlighter-rouge">scripts/</code></strong>, exécuter la commande suivante :</p>
+
+      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node run_doc.mjs
+</code></pre></div>      </div>
+
+      <ul>
+        <li>Ce script va successivement lancer :
+          <ul>
+            <li><code class="language-plaintext highlighter-rouge">list-images.mjs</code> pour générer ou mettre à jour le fichier <code class="language-plaintext highlighter-rouge">docs/imagesData.json</code> avec les URLs, tags et variantes d’images Cloudinary.</li>
+            <li><code class="language-plaintext highlighter-rouge">generate-md-gallery.mjs</code> pour créer ou mettre à jour la galerie Markdown dans <code class="language-plaintext highlighter-rouge">docs/images-gallery.md</code>.</li>
+            <li>L’ajout des fichiers générés à Git, suivi d’un commit automatique avec le message “Update image gallery”.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>(Optionnel)</strong> Pour pousser les modifications sur le dépôt distant, exécuter ensuite :</p>
+      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push
+</code></pre></div>      </div>
+    </li>
+  </ol>
+
+  <hr />
+
+  <h2 id="conseils-et-rappels">Conseils et rappels</h2>
+
+  <ul>
+    <li>Vérifier que les scripts <code class="language-plaintext highlighter-rouge">list-images.mjs</code>, <code class="language-plaintext highlighter-rouge">generate-md-gallery.mjs</code>, <code class="language-plaintext highlighter-rouge">upload-front.mjs</code> et <code class="language-plaintext highlighter-rouge">run_doc.mjs</code> sont bien présents dans le dossier <code class="language-plaintext highlighter-rouge">scripts/</code>.</li>
+    <li>Adapter la procédure si les noms de fichiers ou la structure changent dans le projet.</li>
+    <li>Consulter ce fichier <code class="language-plaintext highlighter-rouge">README.md</code> pour toute mise à jour ou information complémentaire sur l’utilisation des scripts de gestion de la galerie.</li>
+  </ul>
+
+</div>
+</main>
+
+      <footer>
+        Projet de Fin de Batch #165 – Amel, Nico, Sami, Sofiane, Stéphane – ©
+        Mai 2025
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const root = document.documentElement
+        const toggle = document.getElementById("theme-toggle")
+        const stored = localStorage.getItem("theme")
+        if (
+          stored === "dark" ||
+          (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          root.classList.add("dark-mode")
+          toggle.checked = true
+        }
+        toggle.addEventListener("change", function () {
+          const isDark = root.classList.toggle("dark-mode")
+          localStorage.setItem("theme", isDark ? "dark" : "light")
+        })
+      })
+    </script>
+  </body>
+</html>

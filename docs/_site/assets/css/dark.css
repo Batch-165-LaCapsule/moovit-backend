@@ -1,0 +1,53 @@
+html.dark-mode body {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6 {
+  color: #ffd86b;
+}
+
+html.dark-mode p,
+html.dark-mode li,
+html.dark-mode ul,
+html.dark-mode ol,
+html.dark-mode th,
+html.dark-mode td,
+html.dark-mode blockquote {
+  color: #cccccc;
+}
+
+html.dark-mode a {
+  color: #ffd86b;
+}
+
+html.dark-mode pre,
+html.dark-mode code {
+  background: #23272f !important;
+  color: #e6e6e6 !important;
+}
+
+html.dark-mode hr {
+  border-color: #444 !important;
+}
+
+html.dark-mode table {
+  border-color: #333;
+  background: #191919;
+}
+
+/* Optionnel : pour que TOUS les éléments héritent du color en dark */
+html.dark-mode * {
+  color: inherit;
+  border-color: inherit;
+  background-color: transparent;
+}
+html.dark-mode .gallery-card {
+  background: #23232b;
+  color: #e0e0e0;
+}
