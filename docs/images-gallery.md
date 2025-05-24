@@ -1,4 +1,8 @@
 
+---
+layout: default
+title: Galerie d’images Cloudinary
+---
 <!--
 Galerie générée dynamiquement avec toutes les propriétés Cloudinary affichées.
 -->
