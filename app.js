@@ -17,6 +17,7 @@ app.use(logger("dev"))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
+// pour servir les style de la page public/index.html
 app.use(express.static(path.join(__dirname, "public")))
 
 // app.use("/", indexRouter);

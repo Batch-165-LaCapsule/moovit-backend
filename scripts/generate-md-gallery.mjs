@@ -32,6 +32,10 @@ const allTags = Array.from(
 
 // Début du contenu Markdown + CSS pour la grille
 let md = `
+---
+layout: default
+title: Galerie d’images Cloudinary
+---
 <!--
 Galerie générée dynamiquement avec toutes les propriétés Cloudinary affichées.
 -->

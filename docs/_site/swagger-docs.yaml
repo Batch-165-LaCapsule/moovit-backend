@@ -1,0 +1,226 @@
+openapi: 3.0.0
+info:
+  title: API Mooveit
+  version: 1.0.0
+  description: Documentation automatique des endpoints API de Mooveit
+
+servers:
+  - url: https://moovit-backend.onrender.com
+  - url: http://localhost:3000
+
+paths:
+  /api/users/signup:
+    post:
+      summary: Crée un nouvel utilisateur
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        200:
+          description: Résultat de l'inscription
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: boolean
+                  token:
+                    type: string
+                  error:
+                    type: string
+        500:
+          description: Erreur serveur
+
+  /api/users/signin:
+    post:
+      summary: Connexion d'un utilisateur
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        200:
+          description: Résultat de la connexion
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: boolean
+                  token:
+                    type: string
+                  error:
+                    type: string
+                  sportPlayed:
+                    type: array
+                    items:
+                      type: string
+                  username:
+                    type: string
+                  admin:
+                    type: boolean
+                  xp:
+                    type: integer
+                  level:
+                    type: string
+                  photoUrl:
+                    type: string
+        500:
+          description: Erreur serveur
+
+  /api/users/geoloc:
+    post:
+      summary: Mise à jour de la géolocalisation utilisateur
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                lat:
+                  type: number
+                lon:
+                  type: number
+      responses:
+        200:
+          description: Résultat de la géolocalisation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: boolean
+                  data:
+                    type: object
+                  error:
+                    type: string
+        500:
+          description: Erreur serveur
+
+  /api/users/onboarding:
+    post:
+      summary: Onboarding utilisateur
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                username:
+                  type: string
+                name:
+                  type: string
+                gender:
+                  type: string
+                age:
+                  type: integer
+                sportsPlayed:
+                  type: string
+                level:
+                  type: string
+                reason:
+                  type: string
+                dayTime:
+                  type: string
+                notificationActive:
+                  type: boolean
+      responses:
+        200:
+          description: Résultat de l'onboarding
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: boolean
+                  data:
+                    type: object
+                  error:
+                    type: string
+        500:
+          description: Erreur serveur
+
+  /api/users/testUser:
+    post:
+      summary: Crée un utilisateur de test (dev)
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              # Propriétés nombreuses, mettre à jour selon les besoins
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+                token:
+                  type: string
+                username:
+                  type: string
+                name:
+                  type: string
+                gender:
+                  type: string
+                age:
+                  type: integer
+                photoUrl:
+                  type: string
+                xp:
+                  type: integer
+                admin:
+                  type: boolean
+                reason:
+                  type: string
+                dayTime:
+                  type: string
+      responses:
+        200:
+          description: Résultat de la création
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: boolean
+                  data:
+                    type: object
+        500:
+          description: Erreur serveur

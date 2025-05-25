@@ -1,0 +1,87 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "description",
+      "image",
+      "levels",
+      "title"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "description": {
+        "bsonType": "string"
+      },
+      "image": {
+        "bsonType": "string"
+      },
+      "levels": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "properties": {
+            "description": {
+              "bsonType": "string"
+            },
+            "image": {
+              "bsonType": "string"
+            },
+            "subLevels": {
+              "bsonType": "array",
+              "items": {
+                "bsonType": "object",
+                "properties": {
+                  "description": {
+                    "bsonType": "string"
+                  },
+                  "image": {
+                    "bsonType": "string"
+                  },
+                  "mediaUrl": {
+                    "bsonType": "string"
+                  },
+                  "timing": {
+                    "bsonType": "int"
+                  },
+                  "tipOfThePro": {
+                    "bsonType": "string"
+                  },
+                  "title": {
+                    "bsonType": "string"
+                  },
+                  "xp": {
+                    "bsonType": "int"
+                  }
+                },
+                "required": [
+                  "description",
+                  "image",
+                  "mediaUrl",
+                  "timing",
+                  "tipOfThePro",
+                  "title",
+                  "xp"
+                ]
+              }
+            },
+            "title": {
+              "bsonType": "string"
+            }
+          },
+          "required": [
+            "description",
+            "image",
+            "subLevels",
+            "title"
+          ]
+        }
+      },
+      "title": {
+        "bsonType": "string"
+      }
+    }
+  }
+}
