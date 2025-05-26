@@ -1,0 +1,29 @@
+I"<h1 id="mooveit-batch-165">MooveIt (Batch #165)</h1>
+
+<div class="content-center">
+
+  <p>Ce projet a pour <strong>objectif</strong> de développer une application mobile en React Native à destination d’utilisateurs souhaitant pratiquer une activité physique régulière.
+Divers outils et technologies seront présentées ici et documentées durant toute la durée de vie du projet.</p>
+
+  <p><strong>Contexte</strong> :</p>
+
+  <ul>
+    <li>Utilisation de Cloudinary (compte <strong>deuhttaaq</strong>) pour stocker et servir les assets.</li>
+    <li>Procédure d’upload sur cloudinary et de mise à jour de la galerie d’image dans le repo backend</li>
+    <li>Documentation des routes API pour l’authentification et la récupération d’images via Swagger</li>
+    <li>Appel à une api externe (https://wttr.in/nice) pour récuperer la météo de l’utilisateur géolocalisé</li>
+  </ul>
+
+</div>
+
+<h2 id="sommaire">Sommaire</h2>
+
+<ul>
+  <li><a href="#projet-fin-de-batch">Objectif &amp; Contexte</a></li>
+  <li><a href="images-gallery.html">Galerie d’images</a></li>
+  <li><a href="https://moovit-backend.onrender.com/api-docs">Accéder à la doc de l’API</a></li>
+  <li><a href="procedure-galerie.md">Procédure de mise à jour de la galerie d’images</a></li>
+</ul>
+
+<hr />
+:ET
