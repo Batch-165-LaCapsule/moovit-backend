@@ -9,6 +9,27 @@ servers:
   - url: http://localhost:3000
 
 paths:
+  /api/status:
+    get:
+      summary: Check API availability
+      description: Returns a status message to confirm that the API is up and running.
+      tags:
+        - General
+      responses:
+        "200":
+          description: API is operational
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+                  message:
+                    type: string
+                    example: API Mooveit is operational.
+
   /api/users/signup:
     post:
       summary: Crée un nouvel utilisateur

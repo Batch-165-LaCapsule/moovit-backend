@@ -28,7 +28,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec)) // route pou
 
 // Renvoie index.html à la racine du domaine (https://api.mooveit.ovh)
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "index.html"))
-  })
+  res.sendFile(path.join(__dirname, "public", "index.html"))
+})
 
 module.exports = app
