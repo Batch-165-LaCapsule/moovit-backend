@@ -1,0 +1,1063 @@
+[{
+  "_id": {
+    "$oid": "682b3e38b0d896a34fdef7ed"
+  },
+  "title": "Natation",
+  "description": "Apprends à nager comme un pro",
+  "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif",
+  "levels": [
+    {
+      "title": "Niveau 1",
+      "description": "Objectifs du niveau 1",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif",
+      "subLevels": [
+        {
+          "title": "Sous-niveau 1",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=XyR8TuL5qF4",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "Sous-niveau 2",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=fT0X9dqK1Wg",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "Sous-niveau 3",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=AKz5GWV6ZMQ",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 2",
+      "description": "Objectifs du niveau 2",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif",
+      "subLevels": [
+        {
+          "title": "Sous-niveau 4",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=OaU-U1ixKtU",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "Sous-niveau 5",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=_uG7PHpTrn0",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "Sous-niveau 6",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=fT0X9dqK1Wg",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 3",
+      "description": "Objectifs du niveau 3",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif",
+      "subLevels": [
+        {
+          "title": "Sous-niveau 7",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=AKz5GWV6ZMQ",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "Sous-niveau 8",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=_uG7PHpTrn0",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "Sous-niveau 9",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=_uG7PHpTrn0",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 4",
+      "description": "Objectifs du niveau 4",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif",
+      "subLevels": [
+        {
+          "title": "Sous-niveau 10",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=XyR8TuL5qF4",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "Sous-niveau 11",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=fT0X9dqK1Wg",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "Sous-niveau 12",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=_uG7PHpTrn0",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 5",
+      "description": "Objectifs du niveau 5",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif",
+      "subLevels": [
+        {
+          "title": "Sous-niveau 13",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=OaU-U1ixKtU",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "Sous-niveau 14",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=_uG7PHpTrn0",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "Sous-niveau 15",
+          "description": "",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=fT0X9dqK1Wg",
+          "tipOfThePro": "Un conseil utile de pro",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "682b3e38b0d896a34fdef7ee"
+  },
+  "title": "Padel",
+  "description": "Progresse au padel étape par étape",
+  "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+  "levels": [
+    {
+      "title": "Niveau 1",
+      "description": "DÉCOUVERTE (Bases du jeu)",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+      "subLevels": [
+        {
+          "title": "1.1 1. Comprendre les règles du padel",
+          "description": "1. Comprendre les règles du padel",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "1.2 2. Savoir compter les points",
+          "description": "2. Savoir compter les points",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "1.3 3. Connaître les dimensions du terrain",
+          "description": "3. Connaître les dimensions du terrain",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "1.4 4. Identifier les zones de jeu (filet, fond, vitres)",
+          "description": "4. Identifier les zones de jeu (filet, fond, vitres)",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "1.5 5. Savoir tenir sa raquette correctement",
+          "description": "5. Savoir tenir sa raquette correctement",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "1.6 6. Apprendre la position d’attente",
+          "description": "6. Apprendre la position d’attente",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "1.7 7. Apprendre à faire un service régulier",
+          "description": "7. Apprendre à faire un service régulier",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "1.8 8. Comprendre les rebonds sur les vitres",
+          "description": "8. Comprendre les rebonds sur les vitres",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "1.9 9. Connaitre les fautes les plus courantes",
+          "description": "9. Connaitre les fautes les plus courantes",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "1.10 10. Participer à sa première partie découverte",
+          "description": "10. Participer à sa première partie découverte",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 2",
+      "description": "TECHNIQUE DE BASE (Coup droit, revers, volée)",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+      "subLevels": [
+        {
+          "title": "2.1 1. Maîtriser le coup droit à plat",
+          "description": "1. Maîtriser le coup droit à plat",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "2.2 2. Apprendre le revers à deux mains",
+          "description": "2. Apprendre le revers à deux mains",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "2.3 3. Contrôler la balle en volée (coup droit)",
+          "description": "3. Contrôler la balle en volée (coup droit)",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "2.4 4. Contrôler la volée de revers",
+          "description": "4. Contrôler la volée de revers",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "2.5 5. Savoir faire un lob défensif",
+          "description": "5. Savoir faire un lob défensif",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "2.6 6. Améliorer sa régularité au fond de court",
+          "description": "6. Améliorer sa régularité au fond de court",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "2.7 7. Jouer une balle après rebond sur vitre",
+          "description": "7. Jouer une balle après rebond sur vitre",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "2.8 8. Apprendre à amortir doucement",
+          "description": "8. Apprendre à amortir doucement",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "2.9 9. Enchaîner 10 frappes sans faute",
+          "description": "9. Enchaîner 10 frappes sans faute",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "2.10 10. Match d’entraînement avec objectif technique",
+          "description": "10. Match d’entraînement avec objectif technique",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 3",
+      "description": "DÉPLACEMENTS ET POSITIONNEMENT",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+      "subLevels": [
+        {
+          "title": "3.1 1. Bouger en pas chassés latéraux",
+          "description": "1. Bouger en pas chassés latéraux",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "3.2 2. Revenir rapidement en position centrale",
+          "description": "2. Revenir rapidement en position centrale",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "3.3 3. Apprendre à se replacer après chaque frappe",
+          "description": "3. Apprendre à se replacer après chaque frappe",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "3.4 4. Communiquer avec son partenaire",
+          "description": "4. Communiquer avec son partenaire",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "3.5 5. Se positionner correctement au retour de service",
+          "description": "5. Se positionner correctement au retour de service",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "3.6 6. Monter au filet après un lob",
+          "description": "6. Monter au filet après un lob",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "3.7 7. Descendre rapidement après un lob adverse",
+          "description": "7. Descendre rapidement après un lob adverse",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "3.8 8. Apprendre à jouer à gauche ou à droite",
+          "description": "8. Apprendre à jouer à gauche ou à droite",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "3.9 9. Lecture des trajectoires sur vitres",
+          "description": "9. Lecture des trajectoires sur vitres",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "3.10 10. Positionnement optimal en défense",
+          "description": "10. Positionnement optimal en défense",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 4",
+      "description": "STRATÉGIES DÉFENSIVES",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+      "subLevels": [
+        {
+          "title": "4.1 1. Savoir ralentir le jeu pour se replacer",
+          "description": "1. Savoir ralentir le jeu pour se replacer",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "4.2 2. Gérer une balle sur la vitre latérale",
+          "description": "2. Gérer une balle sur la vitre latérale",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "4.3 3. Répondre à un smash avec un lob",
+          "description": "3. Répondre à un smash avec un lob",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "4.4 4. Défendre en reculant sans paniquer",
+          "description": "4. Défendre en reculant sans paniquer",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "4.5 5. Savoir bloquer un smash à la grille",
+          "description": "5. Savoir bloquer un smash à la grille",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "4.6 6. Reprendre l’initiative depuis la défense",
+          "description": "6. Reprendre l’initiative depuis la défense",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "4.7 7. Défendre les balles basses",
+          "description": "7. Défendre les balles basses",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "4.8 8. Savoir temporiser en fond de court",
+          "description": "8. Savoir temporiser en fond de court",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "4.9 9. Rebond + défense sur vitre de fond",
+          "description": "9. Rebond + défense sur vitre de fond",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "4.10 10. Travail de défense en diagonale",
+          "description": "10. Travail de défense en diagonale",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 5",
+      "description": "STRATÉGIES OFFENSIVES",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+      "subLevels": [
+        {
+          "title": "5.1 1. Construire le point depuis le fond",
+          "description": "1. Construire le point depuis le fond",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "5.2 2. Attaquer sur une volée haute",
+          "description": "2. Attaquer sur une volée haute",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "5.3 3. Forcer une faute avec une balle tendue",
+          "description": "3. Forcer une faute avec une balle tendue",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "5.4 4. Réussir un lob offensif",
+          "description": "4. Réussir un lob offensif",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "5.5 5. Anticiper les faiblesses adverses",
+          "description": "5. Anticiper les faiblesses adverses",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "5.6 6. Attaquer après un retour faible",
+          "description": "6. Attaquer après un retour faible",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "5.7 7. Conclure un point au filet",
+          "description": "7. Conclure un point au filet",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "5.8 8. Stratégie : pousser à la faute",
+          "description": "8. Stratégie : pousser à la faute",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "5.9 9. Changer de rythme pour surprendre",
+          "description": "9. Changer de rythme pour surprendre",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "5.10 10. Jeu en croisé et en ligne",
+          "description": "10. Jeu en croisé et en ligne",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 6",
+      "description": "MAÎTRISE DU FILET",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+      "subLevels": [
+        {
+          "title": "6.1 1. Monter à deux au filet",
+          "description": "1. Monter à deux au filet",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "6.2 2. Volée amortie gagnante",
+          "description": "2. Volée amortie gagnante",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "6.3 3. Lecture des trajectoires montantes",
+          "description": "3. Lecture des trajectoires montantes",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "6.4 4. Smash contrôlé en sécurité",
+          "description": "4. Smash contrôlé en sécurité",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "6.5 5. Smash bandeja (espagnol : plat et croisé)",
+          "description": "5. Smash bandeja (espagnol : plat et croisé)",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "6.6 6. La vibora (smash slicé latéral)",
+          "description": "6. La vibora (smash slicé latéral)",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "6.7 7. Feintes de volée",
+          "description": "7. Feintes de volée",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "6.8 8. Volée puissante long de ligne",
+          "description": "8. Volée puissante long de ligne",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "6.9 9. Maintien de la pression au filet",
+          "description": "9. Maintien de la pression au filet",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "6.10 10. Reprise de filet après lob",
+          "description": "10. Reprise de filet après lob",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 7",
+      "description": "COUPS SPÉCIAUX ET VARIÉS",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+      "subLevels": [
+        {
+          "title": "7.1 1. Coup entre les jambes (par sécurité)",
+          "description": "1. Coup entre les jambes (par sécurité)",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "7.2 2. Smash par 3 (sortie du terrain)",
+          "description": "2. Smash par 3 (sortie du terrain)",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "7.3 3. Smash par 4 (vers le fond)",
+          "description": "3. Smash par 4 (vers le fond)",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "7.4 4. Utiliser la grille pour surprendre",
+          "description": "4. Utiliser la grille pour surprendre",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "7.5 5. Savoir slicer un service",
+          "description": "5. Savoir slicer un service",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "7.6 6. Service à effet",
+          "description": "6. Service à effet",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "7.7 7. Balle “chiquita” (petite balle basse en volée)",
+          "description": "7. Balle “chiquita” (petite balle basse en volée)",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "7.8 8. Passings croisés",
+          "description": "8. Passings croisés",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=EYv37BFbQuI",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "7.9 9. Réflexes sur balles rapides",
+          "description": "9. Réflexes sur balles rapides",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "7.10 10. Défense sur balle en cloche",
+          "description": "10. Défense sur balle en cloche",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 8",
+      "description": "JEU D’ÉQUIPE ET MENTAL",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+      "subLevels": [
+        {
+          "title": "8.1 1. Gérer les points importants",
+          "description": "1. Gérer les points importants",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "8.2 2. Encourager son partenaire",
+          "description": "2. Encourager son partenaire",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "8.3 3. Garder la concentration",
+          "description": "3. Garder la concentration",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "8.4 4. Analyser le jeu adverse",
+          "description": "4. Analyser le jeu adverse",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "8.5 5. Ne pas s’énerver après une faute",
+          "description": "5. Ne pas s’énerver après une faute",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "8.6 6. Savoir varier pour déstabiliser",
+          "description": "6. Savoir varier pour déstabiliser",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "8.7 7. Communiquer sur les lob/retours",
+          "description": "7. Communiquer sur les lob/retours",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "8.8 8. Plan de jeu avant le match",
+          "description": "8. Plan de jeu avant le match",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "8.9 9. Réagir après une série de fautes",
+          "description": "9. Réagir après une série de fautes",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "8.10 10. Maintenir un rythme positif",
+          "description": "10. Maintenir un rythme positif",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "title": "Niveau 9",
+      "description": "PRÉPARATION PHYSIQUE ET ÉTIREMENTS",
+      "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+      "subLevels": [
+        {
+          "title": "9.1 1. Échauffement avant match",
+          "description": "1. Échauffement avant match",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "9.2 2. Étirement post-match",
+          "description": "2. Étirement post-match",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "9.3 3. Renforcement du bas du corps",
+          "description": "3. Renforcement du bas du corps",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "9.4 4. Renforcement gainage/abdos",
+          "description": "4. Renforcement gainage/abdos",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "9.5 5. Mobilité articulaire (chevilles, hanches)",
+          "description": "5. Mobilité articulaire (chevilles, hanches)",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=jk9Kqato8Ps",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "9.6 6. Travail de vitesse de déplacement",
+          "description": "6. Travail de vitesse de déplacement",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=h7nZ0QpkT0A",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "9.7 7. Sauts et coordination",
+          "description": "7. Sauts et coordination",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "9.8 8. Récupération active",
+          "description": "8. Récupération active",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "9.9 9. Hydratation et nutrition autour du sport",
+          "description": "9. Hydratation et nutrition autour du sport",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=8eFcPbDsnrs",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        },
+        {
+          "title": "9.10 10. Planifier ses entraînements",
+          "description": "10. Planifier ses entraînements",
+          "image": "https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/padel/padel-photo-001.avif",
+          "mediaUrl": "https://www.youtube.com/watch?v=7taGJ0D0uF8",
+          "tipOfThePro": "Pense à ton placement et à ton relâchement",
+          "timing": 120,
+          "xp": 50
+        }
+      ]
+    }
+  ]
+}]
