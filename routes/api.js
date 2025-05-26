@@ -5,7 +5,7 @@ const router = express.Router()
 router.get("/status", (req, res) => {
   res.json({
     status: "ok",
-    message: "API Mooveit is online",
+    message: "🚀 API Mooveit is online",
     timestamp: new Date().toISOString(),
   })
 })
