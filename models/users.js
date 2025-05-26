@@ -35,6 +35,7 @@ const userSchema = mongoose.Schema(
     coordinate:{name:String,location:{type:{type:String},coordinates:{type:[Number]}}},
     city:String,
     notificationActive:Boolean,
+    //photoUrl:{type:String, default:"https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png"},
     photoUrl:String,
     level:String,
     xp:{type:Number, default:0},
