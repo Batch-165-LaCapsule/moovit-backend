@@ -26,9 +26,4 @@ app.use("/api/users", usersRouter) // maj de usersRouter avec le /api
 app.use("/api", apiRouter) //   indexRouter est remplacé par apiRouter (voir lg 12)
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec)) // route pour la doc d'api par Swagger
 
-// Renvoie index.html à la racine du domaine (https://api.mooveit.ovh)
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"))
-})
-
 module.exports = app
