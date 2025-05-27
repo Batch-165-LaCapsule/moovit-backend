@@ -15,6 +15,7 @@ const messages = [
   "DB OK, jusqu'à ce que quelqu'un merge dans le main",
   "DB connectée. On inspire, on code.",
   "C’est bon... jusqu'au prochain activity is not a function",
+  "DB connectée > Un Repo Git pour les gouverner tous",
 ]
 
 const msg = messages[Math.floor(Math.random() * messages.length)]
