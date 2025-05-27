@@ -1,0 +1,445 @@
+/* docs/assets/css/style.css */
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #bebec1;
+  color: #ffffff;
+}
+
+/* Colonne centrale un peu atténuée */
+.container {
+  background: #a787f1;
+  max-width: 65%;
+  min-width: 0;
+  min-height: 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.11);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5vh 0;
+  padding: 24px 18px 18px 18px;
+  position: relative;
+  border-radius: 22px;
+  color: #ffffff;
+  margin: 5vh auto;
+  padding: 32px 32px 24px 32px;
+}
+.container pre {
+  background: #fff8;
+  color: #222;
+  border-radius: 6px;
+  padding: 10px 18px;
+  overflow-x: auto;
+  margin: 18px 0;
+  max-width: 100%;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.container h1,
+.container h2,
+.container h3 {
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+.container h1:first-child {
+  margin-top: 0;
+}
+
+.content-center {
+  background: #8f74cf;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  max-width: 90%;
+  padding: 3rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.11);
+  border-radius: 22px;
+}
+
+.container ul {
+  list-style-type: disc;
+}
+
+.container ol {
+  list-style-type: decimal;
+}
+
+/* HEADER & NAV */
+header {
+  margin-bottom: 24px;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+header nav a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 6px;
+}
+header nav a::before {
+  content: "|";
+  position: absolute;
+  left: -6px;
+  color: currentColor;
+}
+header nav a:first-child::before {
+  content: "";
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #ffe087;
+}
+
+.container ul,
+.container ol {
+  margin-left: 2em; /* Indente les listes */
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+.container li {
+  margin-bottom: 0.5em;
+}
+
+.container pre,
+.container code {
+  font-family: "Fira Mono", "Consolas", "Menlo", monospace;
+  font-size: 1.1em;
+}
+
+.container pre {
+  background: #9072c4; /* Violet un peu plus sombre, pas blanc ni trop pastel */
+  color: #f3eaff; /* Presque blanc, bon contraste sur violet */
+  border-radius: 12px;
+  padding: 8px 18px; /* Réduit le padding vertical et horizontal */
+  margin: 16px 0;
+  overflow-x: auto;
+  max-width: 90%;
+  box-shadow: 0 2px 8px #4e226133; /* Optionnel, léger relief */
+  font-size: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container code {
+  background: #c7b4e6; /* Un fond légèrement plus sombre pour le inline */
+  color: #471b7a;
+  border-radius: 5px;
+  padding: 1px 6px;
+  font-size: 1em;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #969696;
+}
+
+/* TOGGLE SWITCH */
+.toggle-switch {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.toggle-switch input {
+  display: none;
+}
+.switch-label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  position: relative;
+  border-radius: 15px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.switch-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgb(196, 196, 196);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+.switch-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  font-size: 14px;
+  color: #999999;
+}
+.icon {
+  pointer-events: none;
+}
+.toggle-switch input:checked + .switch-label {
+  background: #555555;
+}
+.toggle-switch input:checked + .switch-label .switch-thumb {
+  transform: translateX(30px);
+}
+.toggle-switch input:checked + .switch-label .icon.light {
+  display: none;
+}
+.toggle-switch input:checked + .switch-label .icon.dark {
+  display: inline;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* CARDS */
+.gallery-card {
+  background: #e3e3e9;
+  color: #23232e;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px #0001;
+  padding: 18px 12px 18px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+  transition: background 0.25s, color 0.25s;
+}
+
+.gallery-card .cloud-info {
+  font-size: 0.9em;
+  color: #dde0ef;
+  margin-bottom: 6px;
+}
+.gallery-card .cloud-tags {
+  margin: 8px 0;
+  font-size: 0.85em;
+  color: #ccd7f7;
+}
+.gallery-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery-actions button {
+  border: none;
+  background: #f0b429;
+  color: #23232e;
+  border-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-size: 0.98em;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 4px;
+}
+.gallery-actions button:active {
+  background: #c29526;
+  color: #222;
+}
+
+.gallery-variant {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 8px;
+  font-size: 0.92em;
+  color: #607d8b;
+}
+.gallery-variant .variant-link {
+  background: #f0b42922;
+  color: #0066cc;
+  padding: 1px 7px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.gallery-variant .variant-link:hover {
+  background: #f0b429;
+  color: #222;
+}
+.gallery-variant .sep {
+  margin: 0 0.5em;
+  color: #b6b6b6;
+}
+
+/* Tags dans la galerie */
+.gallery-card .cloud-tags {
+  margin: 8px 0;
+  font-size: 0.85em;
+  color: #757575;
+  font-weight: 500;
+}
+.gallery-card .cloud-tags .tag {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1e293b;
+  padding: 2px 10px;
+  margin-right: 4px;
+  margin-bottom: 3px;
+  border-radius: 7px;
+  font-size: 0.97em;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+html.dark-mode .gallery-card .cloud-tags .tag {
+  background: #263048;
+  color: #bbeaff;
+}
+
+/* ----------- DARK MODE ----------- */
+html.dark-mode body {
+  background: #17171b;
+  color: #f7f7fc;
+}
+html.dark-mode .container {
+  background: #181820;
+  color: #f3f3fa;
+}
+html.dark-mode .gallery-card {
+  background: #22222b;
+  color: #f0f0ff;
+}
+html.dark-mode a,
+html.dark-mode header nav a {
+  color: #f0b429;
+}
+html.dark-mode .gallery-actions button {
+  background: #f0b429;
+  color: #23232e;
+}
+html.dark-mode .gallery-actions button:active {
+  background: #c29526;
+  color: #eee;
+}
+html.dark-mode .gallery-variant .variant-link {
+  background: #f0b42922;
+  color: #92cfff;
+}
+html.dark-mode .gallery-variant .variant-link:hover {
+  background: #f0b429;
+  color: #222;
+}
+
+/* Reste du markdown */
+p,
+li {
+  color: #333;
+}
+html.dark-mode p,
+html.dark-mode li {
+  color: #e6e6e6;
+}
+h1,
+h2,
+h3 {
+  color: #111;
+}
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3 {
+  color: #fff;
+}
+
+/* Code & pre */
+pre,
+code {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
+  background: #f6f8fa;
+  color: #24292e;
+  border-radius: 4px;
+}
+html.dark-mode pre,
+html.dark-mode code {
+  background: #1e1e2a;
+  color: #c9d1d9;
+}
+
+th {
+  background: #f6f8fa;
+  text-align: left;
+}
+html.dark-mode th {
+  background: #23232e;
+}
+html.dark-mode table,
+html.dark-mode th,
+html.dark-mode td {
+  border-color: #444444;
+}
+
+footer {
+  color: #666;
+}
+html.dark-mode footer {
+  color: #aaa;
+}

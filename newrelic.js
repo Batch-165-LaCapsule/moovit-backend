@@ -1,18 +1,23 @@
-"use strict"
+use strict'
+require('dotenv').config()
+
 /**
  * New Relic agent configuration.
  *
  * See lib/config/default.js in the agent distribution for a more complete
  * description of configuration variables and their potential values.
  */
-require("dotenv").config()
-
 exports.config = {
   /**
    * Array of application names.
    */
+
   app_name: [process.env.NEW_RELIC_APP_NAME],
   /**
+
+  app_name: [process.env.NEW_RELIC_APP_NAME || 'MooveitApp'],
+    /**
+
    * Your New Relic license key.
    */
   license_key: process.env.NEW_RELIC_LICENSE_KEY,
@@ -40,16 +45,17 @@ exports.config = {
      * @name NEW_RELIC_ATTRIBUTES_EXCLUDE
      */
     exclude: [
-      "request.headers.cookie",
-      "request.headers.authorization",
-      "request.headers.proxyAuthorization",
-      "request.headers.setCookie*",
-      "request.headers.x*",
-      "response.headers.cookie",
-      "response.headers.authorization",
-      "response.headers.proxyAuthorization",
-      "response.headers.setCookie*",
-      "response.headers.x*",
-    ],
-  },
+
+      'request.headers.cookie',
+      'request.headers.authorization',
+      'request.headers.proxyAuthorization',
+      'request.headers.setCookie*',
+      'request.headers.x*',
+      'response.headers.cookie',
+      'response.headers.authorization',
+      'response.headers.proxyAuthorization',
+      'response.headers.setCookie*',
+      'response.headers.x*'
+    ]
+  }
 }
