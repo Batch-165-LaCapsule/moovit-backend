@@ -194,6 +194,58 @@ paths:
         500:
           description: Erreur serveur
 
+  /api/users/levelupdate:
+    post:
+      summary: Mise à jour du niveau et sous-niveau d’un utilisateur
+      tags:
+        - users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                  description: Token JWT de l'utilisateur
+                sport:
+                  type: string
+                  description: Sport concerné par la mise à jour
+                xp:
+                  type: integer
+                  description: Points d'expérience à ajouter
+                subLevel:
+                  type: integer
+                  description: Sous-niveau atteint
+                level:
+                  type: integer
+                  description: Niveau atteint
+              required:
+                - token
+                - sport
+                - xp
+                - subLevel
+                - level
+      responses:
+        "200":
+          description: Mise à jour effectuée avec succès
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: boolean
+                  message:
+                    type: string
+        "400":
+          description: Requête invalide
+        "401":
+          description: Non autorisé
+        "500":
+          description: Erreur interne serveur
+
   /api/users/testUser:
     post:
       summary: Crée un utilisateur de test (dev)
