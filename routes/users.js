@@ -362,10 +362,10 @@ router.post("/dashboard", (req, res) =>
                 }
                 
                 //requete vers l' api meteo
-                fetch(`https://wttr.in/${userData.city}?format=j1`).then(r=>r.json()).then(meteoData=>
+                fetch(`https://wttr.in/${userData.city}?format=j1&lang=fr`).then(r=>r.json()).then(meteoData=>
                 {
                   //stocker les données meteo
-                  let meteoDesc = meteoData.current_condition[0].weatherDesc[0].value
+                  let meteoDesc = meteoData.current_condition[0].lang_fr[0].value
 
                    //reponse avec les données du "user", "level" et meteo
                   res.json({result:true,dataUser:userData, dataLevel:activityLevel, dataMeteo:meteoDesc})
