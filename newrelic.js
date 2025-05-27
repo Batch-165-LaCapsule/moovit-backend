@@ -1,5 +1,6 @@
-'use strict'
+use strict'
 require('dotenv').config()
+
 /**
  * New Relic agent configuration.
  *
@@ -10,8 +11,13 @@ exports.config = {
   /**
    * Array of application names.
    */
+
+  app_name: [process.env.NEW_RELIC_APP_NAME],
+  /**
+
   app_name: [process.env.NEW_RELIC_APP_NAME || 'MooveitApp'],
     /**
+
    * Your New Relic license key.
    */
   license_key: process.env.NEW_RELIC_LICENSE_KEY,
@@ -21,7 +27,7 @@ exports.config = {
      * issues with the agent, 'info' and higher will impose the least overhead on
      * production applications.
      */
-    level: 'info'
+    level: "info",
   },
   /**
    * When true, all request headers except for those listed in attributes.exclude
@@ -39,6 +45,7 @@ exports.config = {
      * @name NEW_RELIC_ATTRIBUTES_EXCLUDE
      */
     exclude: [
+
       'request.headers.cookie',
       'request.headers.authorization',
       'request.headers.proxyAuthorization',
