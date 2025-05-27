@@ -367,31 +367,14 @@ router.post("/dashboard", (req, res) =>
                   //stocker les données meteo
                   let meteoDesc = meteoData.current_condition[0].lang_fr[0].value
 
-                 //requete vers l' api meteo pour récuperer le symbole météo
-                  fetch(`https://wttr.in/${userData.city}?format=3`).then(rep=>rep.json()).then(symbolData=>
-                  {
-                    //stocker les données météo + symbole météo
-                    let AllDataMeteo=
-                    {
-                      meteoDesc:meteoDesc,
-                      symbolData:symbolData,
-                    }
-
-                     //reponse avec les données du "user", "level" et meteo
-                    res.json({result:true,dataUser:userData, dataLevel:activityLevel, dataMeteo:AllDataMeteo})
-
-                  }).catch((e) => 
-                  {
-                    // Si une erreur survient lors de la requete API
-                    res.json({result:true, dataUser:userData, dataLevel:activityLevel, dataMeteo:"Meteo API error", error:e})
-                  })
-
-                  
+                   //reponse avec les données du "user", "level" et meteo
+                  res.json({result:true,dataUser:userData, dataLevel:activityLevel, dataMeteo:meteoDesc})
                 }) 
                 .catch((e) => 
                 {
                   // Si une erreur survient lors de la requete API
                   res.json({result:true, dataUser:userData, dataLevel:activityLevel, dataMeteo:"Meteo API error", error:e})
+                  //res.status(500).json({ message: "Meteo API error", error: e}) 
                 })
 
               }
