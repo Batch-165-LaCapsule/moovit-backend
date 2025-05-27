@@ -38,7 +38,7 @@ const userSchema = mongoose.Schema({
   //photoUrl:{type:String, default:"https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png"},
   photoUrl: String,
   currentLevelID: Number,
-  currentSubLevelID: Number,
+  currentSubLevelID: { type: Number, default: 0 },
   xp: { type: Number, default: 0 },
   isSocialConnected: Boolean,
   sportPlayed: [{ type: mongoose.Schema.Types.ObjectId, ref: "activities" }],
