@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "_id",
+    "description",
+    "image",
+    "levels",
+    "title"
+  ],
+  "properties": {
+    "_id": {
+      "$ref": "#/$defs/ObjectId"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "levels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "description",
+          "image",
+          "levelID",
+          "subLevels",
+          "title"
+        ],
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "levelID": {
+            "type": "integer"
+          },
+          "subLevels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "description",
+                "image",
+                "mediaUrl",
+                "subLevelID",
+                "timing",
+                "tipOfThePro",
+                "title",
+                "xp"
+              ],
+              "properties": {
+                "description": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "mediaUrl": {
+                  "type": "string"
+                },
+                "subLevelID": {
+                  "type": "integer"
+                },
+                "timing": {
+                  "type": "integer"
+                },
+                "tipOfThePro": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "xp": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "ObjectId": {
+      "type": "object",
+      "properties": {
+        "$oid": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{24}$"
+        }
+      },
+      "required": [
+        "$oid"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
