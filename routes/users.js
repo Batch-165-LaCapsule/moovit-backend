@@ -479,6 +479,81 @@ router.post("/onboarding", (req, res) =>
   }
 });
 
+//route pour updater le level
+router.post("/levelupdate", (req, res)=>
+{
+  // Récupération des données envoyées dans le body de la requête
+  let {token, sport, xp, subLevel,level} = req.body
+
+  //verifier que tout les champs sont présents
+  if(checkBody(req.body, ["token","sport","xp","subLevel","level"]))
+  {
+    //modification de user pour mettre à jour les données
+    User.updateOne({token:token},{xp:xp, currentSubLevelID:subLevel, currentLevelID:level}).then(modifiedUser=>
+    {
+      //verifier que l' element user a été bien modifié
+      if(modifiedUser.modifiedCount>0)
+      { 
+            User.findOne({token:token}).populate("sportPlayed").then(userData=>
+            {
+                //verifier si le user modifié a été bien trouvé
+              if(userData)
+              {
+                //rechercher l' activité choisi dans la collection "activities"
+                  Activity.findOne({title:sport}).then(activityData=>
+                  {
+                  
+                    //verifier que l' activity a été bien trouvée
+                    if(activityData)
+                    {
+                      //recherche le "level" dans la collection "activities"
+                      let activityLevel
+                      for(let Vlevel of activityData.levels)
+                      {
+                        if(Vlevel.levelID===userData.currentLevelID)
+                        {
+                          activityLevel=Vlevel
+                        }
+                      }
+                      //reponse avec les données "level"
+                        res.json({result:true, dataActivity:activityLevel})
+                      
+                      
+
+                    }
+                    else
+                    {
+                        //reponse si l' ectivity n a pas trouvée
+                        res.json({result:false, error: "activity not found"})
+                    }
+                  })
+              }
+              else
+              {
+                //reponse si user n' a pas été trouvé
+                res.json({result:false, error: "user not found"})
+              }
+
+        })
+      }
+      else
+      {
+        //reponse si user n' a pas été modifié
+        res.json({result:false, error: "user not updated"})
+      } 
+
+    })
+
+  }
+  else 
+  {
+     //reponse si absance du champ
+    res.json({result:false, error: "entry not found"})
+  }
+
+
+})
+
 //route pour tester la collection user
 router.post("/testUser", (req, res) => 
 {
