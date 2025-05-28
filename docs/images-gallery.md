@@ -10,6 +10,10 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
   <b>Filtres par tag :</b>
   
     <label style="margin-right: 10px;">
+      <input type="checkbox" class="gallery-tag-filter" value="activity-cards"> activity-cards
+    </label>
+  
+    <label style="margin-right: 10px;">
       <input type="checkbox" class="gallery-tag-filter" value="default"> default
     </label>
   
@@ -49,6 +53,10 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
       <input type="checkbox" class="gallery-tag-filter" value="profile"> profile
     </label>
   
+    <label style="margin-right: 10px;">
+      <input type="checkbox" class="gallery-tag-filter" value="transparency"> transparency
+    </label>
+  
 </div>
 <style>
   .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1200px; margin: 2rem auto; }
@@ -65,24 +73,200 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
 </style>
 <div class="gallery">
 
-  <div class="gallery-card" data-tags="default,icon,moovetiapp,profile">
-    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png" alt="projectFinDeBatch/front/images/default-profile_cltqmm" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png">
+  <div class="gallery-card" data-tags="activity-cards,icon,moovetiapp,padel,transparency">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380206/projectFinDeBatch/front/images/activities/activities-padel-02_xkrxs7.png" alt="projectFinDeBatch/front/images/activities/activities-padel-02_xkrxs7" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380206/projectFinDeBatch/front/images/activities/activities-padel-02_xkrxs7.png">
     <div class="cloud-info">
-      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+      Format : <b>png</b> | Dimensions : <b>1536×1024</b> | Taille : <b>2.4 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : default, icon, moovetiapp, profile</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, moovetiapp, padel, transparency</div>
     <div class="gallery-actions">
-      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png', '_blank')">Ouvrir</button>
-      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png">Copier URL</button>
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380206/projectFinDeBatch/front/images/activities/activities-padel-02_xkrxs7.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380206/projectFinDeBatch/front/images/activities/activities-padel-02_xkrxs7.png">Copier URL</button>
       <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
       <button class="filter-btn" data-filter="none">Couleurs normales</button>
     </div>
     
       <div class="gallery-variant">
         Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png" target="_blank">PNG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748380206/projectFinDeBatch/front/images/activities/activities-padel-02_xkrxs7.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748380206/projectFinDeBatch/front/images/activities/activities-padel-02_xkrxs7.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748380206/projectFinDeBatch/front/images/activities/activities-padel-02_xkrxs7.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="activity-cards,icon,moovetiapp,natation,transparency">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380204/projectFinDeBatch/front/images/activities/activities-natation-04_erv60z.png" alt="projectFinDeBatch/front/images/activities/activities-natation-04_erv60z" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380204/projectFinDeBatch/front/images/activities/activities-natation-04_erv60z.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.4 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : activity-cards, icon, moovetiapp, natation, transparency</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380204/projectFinDeBatch/front/images/activities/activities-natation-04_erv60z.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380204/projectFinDeBatch/front/images/activities/activities-natation-04_erv60z.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748380204/projectFinDeBatch/front/images/activities/activities-natation-04_erv60z.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748380204/projectFinDeBatch/front/images/activities/activities-natation-04_erv60z.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748380204/projectFinDeBatch/front/images/activities/activities-natation-04_erv60z.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="activity-cards,icon,moovetiapp,transparency">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-01_kczolj.png" alt="projectFinDeBatch/front/images/activities/activities-natation-01_kczolj" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-01_kczolj.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.4 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : activity-cards, icon, moovetiapp, transparency</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-01_kczolj.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-01_kczolj.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-01_kczolj.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-01_kczolj.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-01_kczolj.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="activity-cards,icon,moovetiapp,natation,transparency">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-05_aumgrc.png" alt="projectFinDeBatch/front/images/activities/activities-natation-05_aumgrc" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-05_aumgrc.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.8 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : activity-cards, icon, moovetiapp, natation, transparency</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-05_aumgrc.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-05_aumgrc.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-05_aumgrc.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-05_aumgrc.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-natation-05_aumgrc.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="activity-cards,icon,moovetiapp,padel,transparency">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-01_mw10dt.png" alt="projectFinDeBatch/front/images/activities/activities-padel-01_mw10dt" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-01_mw10dt.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.6 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : activity-cards, icon, moovetiapp, padel, transparency</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-01_mw10dt.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-01_mw10dt.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-01_mw10dt.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-01_mw10dt.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-01_mw10dt.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="activity-cards,icon,moovetiapp,padel,transparency">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-05_xuzhnq.png" alt="projectFinDeBatch/front/images/activities/activities-padel-05_xuzhnq" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-05_xuzhnq.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : activity-cards, icon, moovetiapp, padel, transparency</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-05_xuzhnq.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-05_xuzhnq.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-05_xuzhnq.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-05_xuzhnq.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748380203/projectFinDeBatch/front/images/activities/activities-padel-05_xuzhnq.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="activity-cards,icon,moovetiapp,natation,transparency">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-natation-02_qn05fh.png" alt="projectFinDeBatch/front/images/activities/activities-natation-02_qn05fh" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-natation-02_qn05fh.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.4 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : activity-cards, icon, moovetiapp, natation, transparency</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-natation-02_qn05fh.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-natation-02_qn05fh.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-natation-02_qn05fh.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-natation-02_qn05fh.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-natation-02_qn05fh.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="activity-cards,icon,moovetiapp,padel,transparency">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-padel-03_g8yq6e.png" alt="projectFinDeBatch/front/images/activities/activities-padel-03_g8yq6e" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-padel-03_g8yq6e.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1536×1024</b> | Taille : <b>2.6 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : activity-cards, icon, moovetiapp, padel, transparency</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-padel-03_g8yq6e.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-padel-03_g8yq6e.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-padel-03_g8yq6e.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-padel-03_g8yq6e.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748380202/projectFinDeBatch/front/images/activities/activities-padel-03_g8yq6e.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="default,icon,moovetiapp,profile">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile-male_cltqmm.png" alt="projectFinDeBatch/front/images/default-profile-male_cltqmm" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile-male_cltqmm.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : default, icon, moovetiapp, profile</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile-male_cltqmm.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile-male_cltqmm.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile-male_cltqmm.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile-male_cltqmm.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile-male_cltqmm.png" target="_blank">PNG</a>
       </div>
     
   </div>
@@ -351,12 +535,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
+  <div class="gallery-card" data-tags="activity-cards,icon,medal,moovetiapp,natation">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747696/projectFinDeBatch/front/images/medals/medal-natation-05_rhqkre.png" alt="projectFinDeBatch/front/images/medals/medal-natation-05_rhqkre" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747696/projectFinDeBatch/front/images/medals/medal-natation-05_rhqkre.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.7 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, medal, moovetiapp, natation</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, medal, moovetiapp, natation</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747696/projectFinDeBatch/front/images/medals/medal-natation-05_rhqkre.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747696/projectFinDeBatch/front/images/medals/medal-natation-05_rhqkre.png">Copier URL</button>
@@ -373,12 +557,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
+  <div class="gallery-card" data-tags="activity-cards,icon,medal,moovetiapp,natation">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747691/projectFinDeBatch/front/images/medals/medal-natation-04_rga9lh.png" alt="projectFinDeBatch/front/images/medals/medal-natation-04_rga9lh" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747691/projectFinDeBatch/front/images/medals/medal-natation-04_rga9lh.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.6 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, medal, moovetiapp, natation</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, medal, moovetiapp, natation</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747691/projectFinDeBatch/front/images/medals/medal-natation-04_rga9lh.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747691/projectFinDeBatch/front/images/medals/medal-natation-04_rga9lh.png">Copier URL</button>
@@ -395,12 +579,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
+  <div class="gallery-card" data-tags="activity-cards,icon,medal,moovetiapp,natation">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747682/projectFinDeBatch/front/images/medals/medal-natation-01_bktbt8.png" alt="projectFinDeBatch/front/images/medals/medal-natation-01_bktbt8" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747682/projectFinDeBatch/front/images/medals/medal-natation-01_bktbt8.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.6 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, medal, moovetiapp, natation</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, medal, moovetiapp, natation</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747682/projectFinDeBatch/front/images/medals/medal-natation-01_bktbt8.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747682/projectFinDeBatch/front/images/medals/medal-natation-01_bktbt8.png">Copier URL</button>
@@ -417,12 +601,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
+  <div class="gallery-card" data-tags="activity-cards,icon,medal,moovetiapp,natation">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747682/projectFinDeBatch/front/images/medals/medal-natation-02_plmmko.png" alt="projectFinDeBatch/front/images/medals/medal-natation-02_plmmko" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747682/projectFinDeBatch/front/images/medals/medal-natation-02_plmmko.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, medal, moovetiapp, natation</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, medal, moovetiapp, natation</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747682/projectFinDeBatch/front/images/medals/medal-natation-02_plmmko.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747682/projectFinDeBatch/front/images/medals/medal-natation-02_plmmko.png">Copier URL</button>
@@ -439,12 +623,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
+  <div class="gallery-card" data-tags="activity-cards,icon,medal,moovetiapp,natation">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747681/projectFinDeBatch/front/images/medals/medal-natation-03_jnfh1s.png" alt="projectFinDeBatch/front/images/medals/medal-natation-03_jnfh1s" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747681/projectFinDeBatch/front/images/medals/medal-natation-03_jnfh1s.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.6 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, medal, moovetiapp, natation</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, medal, moovetiapp, natation</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747681/projectFinDeBatch/front/images/medals/medal-natation-03_jnfh1s.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747681/projectFinDeBatch/front/images/medals/medal-natation-03_jnfh1s.png">Copier URL</button>
@@ -461,12 +645,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,medal,moovetiapp,padel">
+  <div class="gallery-card" data-tags="activity-cards,icon,medal,moovetiapp,padel">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746038/projectFinDeBatch/front/images/medals/medal-padel-05_e44k5r.png" alt="projectFinDeBatch/front/images/medals/medal-padel-05_e44k5r" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746038/projectFinDeBatch/front/images/medals/medal-padel-05_e44k5r.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, medal, moovetiapp, padel</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, medal, moovetiapp, padel</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746038/projectFinDeBatch/front/images/medals/medal-padel-05_e44k5r.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746038/projectFinDeBatch/front/images/medals/medal-padel-05_e44k5r.png">Copier URL</button>
@@ -483,12 +667,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,medal,moovetiapp,padel">
+  <div class="gallery-card" data-tags="activity-cards,icon,medal,moovetiapp,padel">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-01_ntx5ao.png" alt="projectFinDeBatch/front/images/medals/medal-padel-01_ntx5ao" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-01_ntx5ao.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, medal, moovetiapp, padel</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, medal, moovetiapp, padel</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-01_ntx5ao.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-01_ntx5ao.png">Copier URL</button>
@@ -505,12 +689,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,medal,moovetiapp,padel">
+  <div class="gallery-card" data-tags="activity-cards,icon,medal,moovetiapp,padel">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-02_bokjpu.png" alt="projectFinDeBatch/front/images/medals/medal-padel-02_bokjpu" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-02_bokjpu.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.6 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, medal, moovetiapp, padel</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, medal, moovetiapp, padel</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-02_bokjpu.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-02_bokjpu.png">Copier URL</button>
@@ -527,12 +711,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,medal,moovetiapp,padel">
+  <div class="gallery-card" data-tags="activity-cards,icon,medal,moovetiapp,padel">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-03_uesesy.png" alt="projectFinDeBatch/front/images/medals/medal-padel-03_uesesy" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-03_uesesy.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, medal, moovetiapp, padel</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, medal, moovetiapp, padel</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-03_uesesy.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-03_uesesy.png">Copier URL</button>
@@ -549,12 +733,12 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     
   </div>
   
-  <div class="gallery-card" data-tags="icon,medal,moovetiapp,padel">
+  <div class="gallery-card" data-tags="activity-cards,icon,medal,moovetiapp,padel">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-04_qowywo.png" alt="projectFinDeBatch/front/images/medals/medal-padel-04_qowywo" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-04_qowywo.png">
     <div class="cloud-info">
       Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
     </div>
-    <div class="cloud-tags">Tags : icon, medal, moovetiapp, padel</div>
+    <div class="cloud-tags">Tags : activity-cards, icon, medal, moovetiapp, padel</div>
     <div class="gallery-actions">
       <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-04_qowywo.png', '_blank')">Ouvrir</button>
       <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747746036/projectFinDeBatch/front/images/medals/medal-padel-04_qowywo.png">Copier URL</button>
