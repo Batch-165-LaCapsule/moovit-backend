@@ -18,7 +18,7 @@ exports.config = {
   app_name: [process.env.NEW_RELIC_APP_NAME || 'MooveitApp'],
     /**
 
-   * Your New Relic license key.
+   * Your New Relic license key
    */
   license_key: process.env.NEW_RELIC_LICENSE_KEY,
   logging: {

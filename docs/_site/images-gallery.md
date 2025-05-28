@@ -1,8 +1,8 @@
-
 ---
 layout: default
 title: Galerie d’images Cloudinary
 ---
+
 <!--
 Galerie générée dynamiquement avec toutes les propriétés Cloudinary affichées.
 -->
@@ -2063,15 +2063,15 @@ const filterCheckboxes = document.querySelectorAll('.gallery-tag-filter')
 filterCheckboxes.forEach(cb => cb.addEventListener('change', filterGallery))
 
 function filterGallery() {
-  const checked = Array.from(filterCheckboxes).filter(cb => cb.checked).map(cb => cb.value)
-  document.querySelectorAll('.gallery-card').forEach(card => {
-    const tags = (card.dataset.tags || "").split(",").filter(Boolean)
-    // Affiche si tous les tags cochés sont dans l'image (cumulatif ET)
-    if (!checked.length || checked.every(tag => tags.includes(tag))) {
-      card.style.display = ""
-    } else {
-      card.style.display = "none"
-    }
-  })
+const checked = Array.from(filterCheckboxes).filter(cb => cb.checked).map(cb => cb.value)
+document.querySelectorAll('.gallery-card').forEach(card => {
+const tags = (card.dataset.tags || "").split(",").filter(Boolean)
+// Affiche si tous les tags cochés sont dans l'image (cumulatif ET)
+if (!checked.length || checked.every(tag => tags.includes(tag))) {
+card.style.display = ""
+} else {
+card.style.display = "none"
+}
+})
 }
 </script>
