@@ -355,17 +355,17 @@ router.post("/dashboard", (req, res) =>
                 let activityLevel
                 for(let Vlevel of activityData.levels)
                 {
-                  if(Vlevel.levelID===userData.currentLevelID)
+                  if(Vlevel.title===userData.level)
                   {
                      activityLevel=Vlevel
                   }
                 }
                 
                 //requete vers l' api meteo
-                fetch(`https://wttr.in/${userData.city}?format=j1&lang=fr`).then(r=>r.json()).then(meteoData=>
+                fetch(`https://wttr.in/${userData.city}?format=j1`).then(r=>r.json()).then(meteoData=>
                 {
                   //stocker les données meteo
-                  let meteoDesc = meteoData.current_condition[0].lang_fr[0].value
+                  let meteoDesc = meteoData.current_condition[0].weatherDesc[0].value
 
                    //reponse avec les données du "user", "level" et meteo
                   res.json({result:true,dataUser:userData, dataLevel:activityLevel, dataMeteo:meteoDesc})
@@ -424,15 +424,15 @@ router.post("/onboarding", (req, res) =>
         if(sportData)
         {
             //convertit un niveau de compétence en titre de niveau specifique
-            let levelId
+            let levelTitle
             if(level==="Aucune expérience")
-            {levelId = 1}
+            {levelTitle = "Niveau 1"}
             else if(level==="Débutant")
-            {levelId = 3}
+            {levelTitle = "Niveau 3"}
             else if(level==="Intermédiaire")
-            {levelId = 5}
+            {levelTitle = "Niveau 5"}
             else if(level==="Avancé")
-            {levelId = 7}
+            {levelTitle = "Niveau 7"}
             else
             {
               //reponse si le niveau n est pas trouvé
@@ -440,18 +440,18 @@ router.post("/onboarding", (req, res) =>
               return 
             }
 
-            // //recherche du title du niveau
-            // let levelId
-            // for(let Vlevel of sportData.levels)
-            // {
-            //   if(Vlevel.title===levelTitle)
-            //   {
-            //     levelId = Vlevel.title
-            //   }
-            // }
+            //recherche du title du niveau
+            let levelId
+            for(let Vlevel of sportData.levels)
+            {
+              if(Vlevel.title===levelTitle)
+              {
+                levelId = Vlevel.title
+              }
+            }
 
             //modification de user pour ajouter les données manquants
-            User.updateOne({token:token}, {username:username, name:name, gender:gender, age:age, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], currentLevelID:levelId, height:height, weight:weight,city:city.toLowerCase(), photoUrl:"https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png"}).then(userData=>
+            User.updateOne({token:token}, {username:username, name:name, gender:gender, age:age, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], level:levelId, height:height, weight:weight,city:city.toLowerCase(), photoUrl:"https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png"}).then(userData=>
             {
               //verifier que l' element user a été bien modifié
               if(userData.modifiedCount>0)

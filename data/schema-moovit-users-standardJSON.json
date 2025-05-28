@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "_id",
+    "__v",
+    "admin",
+    "coordinate",
+    "email",
+    "medals",
+    "password",
+    "sportPlayed",
+    "token",
+    "xp"
+  ],
+  "properties": {
+    "_id": {
+      "$ref": "#/$defs/ObjectId"
+    },
+    "__v": {
+      "type": "integer"
+    },
+    "admin": {
+      "type": "boolean"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "city": {
+      "type": "string"
+    },
+    "coordinate": {
+      "type": "object",
+      "required": ["location"],
+      "properties": {
+        "location": {
+          "type": "object",
+          "required": ["coordinates"],
+          "properties": {
+            "coordinates": {
+              "type": "array",
+              "items": {
+                "type": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "email": {
+      "type": "string"
+    },
+    "form": {
+      "type": "object",
+      "required": ["_id", "reason"],
+      "properties": {
+        "_id": {
+          "$ref": "#/$defs/ObjectId"
+        },
+        "dayTime": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    },
+    "gender": {
+      "type": "string"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "levelID": {
+      "type": "integer"
+    },
+    "subLevelID": {
+      "type": "integer"
+    },
+    "medals": {
+      "type": "array",
+      "items": {
+        "type": []
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "photoUrl": {
+      "type": "string"
+    },
+    "sportPlayed": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ObjectId"
+      }
+    },
+    "token": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "xp": {
+      "type": "integer"
+    }
+  },
+  "$defs": {
+    "ObjectId": {
+      "type": "object",
+      "properties": {
+        "$oid": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{24}$"
+        }
+      },
+      "required": ["$oid"],
+      "additionalProperties": false
+    }
+  }
+}
