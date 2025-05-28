@@ -554,6 +554,26 @@ router.post("/levelupdate", (req, res)=>
 
 })
 
+router.post("/getsport", (req, res)=>
+{
+  let {sport} = req.body
+
+  //verifier que tout les champs sont présents
+  if(checkBody(req.body, ["sport"]))
+  {
+    
+
+    Activity.findOne({title:sport}).then(dataActivity=>
+    {
+      res.json({result:true, data:dataActivity})
+    })
+
+  }
+
+})
+
+
+
 //route pour tester la collection user
 router.post("/testUser", (req, res) => 
 {
