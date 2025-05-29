@@ -483,13 +483,13 @@ router.post("/onboarding", (req, res) =>
 router.post("/levelupdate", (req, res)=>
 {
   // Récupération des données envoyées dans le body de la requête
-  let {token, sport, xp, subLevel,level} = req.body
+  let {token, sport, xp, subLevel,level, sessions, playTime} = req.body
 
   //verifier que tout les champs sont présents
   if(checkBody(req.body, ["token","sport","xp","subLevel","level"]))
   {
     //modification de user pour mettre à jour les données
-    User.updateOne({token:token},{xp:xp, currentSubLevelID:subLevel, currentLevelID:level}).then(modifiedUser=>
+    User.updateOne({token:token},{xp:xp, currentSubLevelID:subLevel, currentLevelID:level, stats:{nbSessions:sessions,totalTime:playTime}}).then(modifiedUser=>
     {
       //verifier que l' element user a été bien modifié
       if(modifiedUser.modifiedCount>0)
@@ -554,6 +554,7 @@ router.post("/levelupdate", (req, res)=>
 
 })
 
+//route pour recuperer un sport
 router.post("/getsport", (req, res)=>
 {
   let {sport} = req.body
