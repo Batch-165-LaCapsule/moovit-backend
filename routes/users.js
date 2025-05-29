@@ -451,7 +451,7 @@ router.post("/onboarding", (req, res) =>
             // }
 
             //modification de user pour ajouter les données manquants
-            User.updateOne({token:token}, {username:username, name:name, gender:gender, age:age, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], currentLevelID:levelId, height:height, weight:weight,city:city.toLowerCase(), photoUrl:"https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png"}).then(userData=>
+            User.updateOne({token:token}, {username:username, name:name, gender:gender, age:age, notificationActive:notificationActive, form:{reason:reason, dayTime:dayTime}, sportPlayed:[sportData._id], currentLevelID:levelId, height:height, weight:weight,city:city.toLowerCase(), photoUrl:"https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png", stats:{nbSessions:0,totalTime:0}}).then(userData=>
             {
               //verifier que l' element user a été bien modifié
               if(userData.modifiedCount>0)
