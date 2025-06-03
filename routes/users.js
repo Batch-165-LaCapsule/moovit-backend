@@ -3,6 +3,7 @@ var router = express.Router();
 require("../models/connection"); //import de la connection string
 const User = require("../models/users"); //import du schema user
 const Activity = require("../models/activities"); //import du schema activity
+const Medal = require("../models/medals"); //import du schema medals
 const { checkBody } = require("../modules/checkBody"); //import de la fonction checkBody qui verifie que tout le champs soit ni null ni une string vide
 const uid2 = require("uid2"); // module qui permet de generer une num de token
 const bcrypt = require("bcrypt"); //module permet de haché le password
@@ -392,7 +393,7 @@ router.post("/getsport", (req, res)=>
 //route pour tester la collection user
 router.post("/testUser", (req, res) => 
 {
-  let {admin, token, email, password, username, name, gender, age, coordName, coordType, coordLat, coordLon, city, notificationActive, photoUrl, level, levelTitle, xp, isSocialConnected, reason, dayTime, nbSessions, totalTime, nbEtaps} = req.body
+  let {admin, token, email, password, username, name, gender, age, coordName, coordType, coordLat, coordLon, city, notificationActive, photoUrl, currentLevelID, currentSubLevelID, xp, isSocialConnected, reason, dayTime, nbSessions, totalTime, nbEtaps,height,weight} = req.body
   let lastConnectionDate = new Date()
   let creationDateDate = new Date()
   let lastModifiedDate = new Date()
@@ -414,20 +415,7 @@ router.post("/testUser", (req, res) =>
           medalDataID.push(medalData[i]._id)
 
         }
-        Activity.findOne({title:levelTitle}).then(levelData=>
-        {
-          let levelId
-          
-          for(let Vlevel of levelData.levels)
-          {
-            if(Vlevel.title===level)
-            {
-              levelId = Vlevel.title
-
-            }
-          }
-          //res.json({result:true, data:levelId})
-
+       
         
             let testUser = new User(
             {
@@ -461,7 +449,10 @@ router.post("/testUser", (req, res) =>
               },
               sportPlayed:activityDataID,
               medals:medalDataID,
-              level:levelId, 
+              currentSubLevelID:currentSubLevelID,
+              currentLevelID:currentLevelID,
+              weight:weight, 
+              height:height,
 
               
             })
@@ -469,7 +460,6 @@ router.post("/testUser", (req, res) =>
               {
                 res.json({result:true, data: data})
               })
-        })
     })
   })
 });
