@@ -12,7 +12,6 @@ const statSchema = mongoose.Schema({
 })
 
 //Schema du model de la Souscollection "form" contenus dans la collection "Users"
-
 const formSchema = mongoose.Schema({
   reason: String,
   dayTime: String,
@@ -35,7 +34,6 @@ const userSchema = mongoose.Schema({
   },
   city: String,
   notificationActive: Boolean,
-  //photoUrl:{type:String, default:"https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1748005964/projectFinDeBatch/front/images/default-profile_cltqmm.png"},
   photoUrl: String,
   currentLevelID: Number,
   currentSubLevelID: { type: Number, default: 0 },

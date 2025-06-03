@@ -1,8 +1,9 @@
 const express = require("express")
 const router = express.Router()
 
-// Healthcheck
+//route GET pour vérifier si l'API fonctionne (healthcheck)
 router.get("/status", (req, res) => {
+  // Envoie une réponse JSON contenant un message de confirmation, un statut, et la date actuelle
   res.json({
     status: "ok",
     message: "🚀 API Mooveit is online",
@@ -11,5 +12,6 @@ router.get("/status", (req, res) => {
 })
 
 // futures routes API si besoin
+
 
 module.exports = router
