@@ -1,4 +1,9 @@
-require("newrelic")
+
+//pour pas prendre en compte newreic quand je fait les tests
+if (process.env.NODE_ENV !== "test") 
+{
+  require("newrelic");
+}
 require("dotenv").config()
 require("./models/connection")
 var express = require("express")
