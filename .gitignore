@@ -73,5 +73,6 @@ typings/
 !_site/public/docs/**
 docs/_site/
 _site/
+.jekyll-cache/
 
 
