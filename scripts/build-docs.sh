@@ -1,11 +1,10 @@
 #!/bin/bash
 
-echo "📦 Build statique de la doc Jekyll via Docker..."
+echo "📦 Build statique de la doc Jekyll..."
 
-docker run --rm \
-  -v "$(pwd)/docs:/srv/jekyll" \
-  -v "$(pwd)/public/docs:/srv/jekyll/_site" \
-  jekyll/jekyll:4.2.2 \
-  jekyll build --destination /srv/jekyll/_site
+# Conversion du chemin actuel pour Docker sous Windows
+WINPWD=$(pwd -W 2>/dev/null || cygpath -w "$PWD")
 
-echo "✅ Build terminé dans public/docs"
+# Exécution du build Jekyll avec Docker vers _site/ (monté dans ./docs)
+docker run --rm -v "$WINPWD/docs":/srv/jekyll jekyll/jekyll:4 \
+  bash -c "gem install webrick && jekyll build"

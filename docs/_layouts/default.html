@@ -4,28 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{{ page.title }} — {{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/dark.css" />
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/dark.css" />
+    <link
+      rel="icon"
+      href="{{ site.baseurl }}/assets/favicon.ico"
+      type="image/x-icon"
+    />
 
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/apple-touch-icon.png"
+      href="{{ site.baseurl }}/assets/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/assets/favicon-32x32.png"
+      href="{{ site.baseurl }}/assets/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/assets/favicon-16x16.png"
+      href="{{ site.baseurl }}/assets/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="manifest" href="{{ site.baseurl }}/assets/site.webmanifest" />
   </head>
   <body>
     <div class="container">
@@ -53,13 +57,19 @@
         <h1><a href="/">{{ site.title }}</a></h1>
         <nav>
           <a href="/">Accueil</a>
-          <a href="/images-gallery.html">Galerie</a>
+          <a href="{{ site.baseurl }}/images-gallery.html">Galerie</a>
           <a href="https://moovit-backend.onrender.com/api-docs" target="_blank"
             >Doc API Swagger</a
           >
-          <a href="/procedure-galerie.html">Mise à jour de la gallerie</a>
-          <a href="/stats-code-back.html">Statistiques du code Backend</a>
-          <a href="/stats-code-front.html">Statistiques du code Frontend</a>
+          <a href="{{ site.baseurl }}/procedure-galerie.html"
+            >Mise à jour de la gallerie</a
+          >
+          <a href="{{ site.baseurl }}/stats-code-back.html"
+            >Statistiques du code Backend</a
+          >
+          <a href="{{ site.baseurl }}/stats-code-front.html"
+            >Statistiques du code Frontend</a
+          >
         </nav>
       </header>
 

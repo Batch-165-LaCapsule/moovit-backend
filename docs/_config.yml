@@ -1,5 +1,6 @@
 title: MooveIt Backend
 url: "https://api.mooveit.ovh"
+baseurl: "/docs"
 markdown: kramdown
 theme: minima
 
