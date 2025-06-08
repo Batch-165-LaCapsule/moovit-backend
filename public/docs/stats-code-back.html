@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Routes — MooveIt Backend</title>
+    <link rel="stylesheet" href="/docs/assets/css/style.css" />
+    <link rel="stylesheet" href="/docs/assets/css/dark.css" />
+    <link
+      rel="icon"
+      href="/docs/assets/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/docs/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/docs/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/docs/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/docs/assets/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Status up/dow de l'API -->
+      <div
+        id="api-status-light"
+        style="position: absolute; top: 1rem; left: 1rem; font-weight: bold"
+      >
+        ⏳ API status
+      </div>
+
+      <!-- Bouton toggle dark/light mode ++ -->
+      <div class="toggle-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <label for="theme-toggle" class="switch-label">
+          <span class="switch-thumb"></span>
+          <span class="switch-track">
+            <span class="icon light">☀️</span>
+            <span class="icon dark">🌙</span>
+          </span>
+        </label>
+      </div>
+
+      <header>
+        <h1><a href="/">MooveIt Backend</a></h1>
+        <nav>
+          <a href="/">Accueil</a>
+          <a href="/docs/images-gallery.html">Galerie</a>
+          <a href="https://moovit-backend.onrender.com/api-docs" target="_blank"
+            >Doc API Swagger</a
+          >
+          <a href="/docs/procedure-galerie.html"
+            >Mise à jour de la gallerie</a
+          >
+          <a href="/docs/stats-code-back.html"
+            >Statistiques du code Backend</a
+          >
+          <a href="/docs/stats-code-front.html"
+            >Statistiques du code Frontend</a
+          >
+        </nav>
+      </header>
+
+      <main><h1 id="statistiques-de-code--backend-nodejs--express--mongodb">Statistiques de code – Backend (Node.js / Express / MongoDB)</h1>
+
+<blockquote>
+  <p>Généré automatiquement avec <a href="https://github.com/AlDanial/cloc">cloc</a></p>
+</blockquote>
+
+<ul>
+  <li>📆 Date : 2025-06-08</li>
+  <li>📁 Dossier analysé : <code class="language-plaintext highlighter-rouge">moovit-backend/</code></li>
+  <li>🧹 Fichiers exclus : <code class="language-plaintext highlighter-rouge">node_modules</code>, <code class="language-plaintext highlighter-rouge">coverage</code>, <code class="language-plaintext highlighter-rouge">dist</code>, <code class="language-plaintext highlighter-rouge">package.json</code>, <code class="language-plaintext highlighter-rouge">.idea</code>, etc.</li>
+  <li>🔍 Type de fichiers inclus : <code class="language-plaintext highlighter-rouge">.js</code>, <code class="language-plaintext highlighter-rouge">.ts</code>, <code class="language-plaintext highlighter-rouge">.json</code> (hors fichiers de conf)</li>
+</ul>
+
+<hr />
+
+<p>cloc|github.com/AlDanial/cloc v 2.04  T=0.20 s (511.7 files/s, 133303.2 lines/s)
+— | —</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">File</th>
+      <th style="text-align: right">blank</th>
+      <th style="text-align: right">comment</th>
+      <th style="text-align: right">code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">.\docs\imagesData.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">2621</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\imagesData.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">2428</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\imagesData.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">2428</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\images-gallery.md</td>
+      <td style="text-align: right">304</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1954</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\images-gallery.md</td>
+      <td style="text-align: right">278</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1796</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\images-gallery.md</td>
+      <td style="text-align: right">278</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1796</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\activities.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1178</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\data\moovit.activities.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1063</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\moovit.activities.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1063</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\data\activities.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1059</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\assets\css\style.css</td>
+      <td style="text-align: right">27</td>
+      <td style="text-align: right">11</td>
+      <td style="text-align: right">407</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\assets\css\style.css</td>
+      <td style="text-align: right">27</td>
+      <td style="text-align: right">11</td>
+      <td style="text-align: right">407</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\assets\css\style.css</td>
+      <td style="text-align: right">27</td>
+      <td style="text-align: right">11</td>
+      <td style="text-align: right">407</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\routes\users.js</td>
+      <td style="text-align: right">83</td>
+      <td style="text-align: right">72</td>
+      <td style="text-align: right">314</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\swagger-docs.yaml</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">290</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\routes\users.js</td>
+      <td style="text-align: right">89</td>
+      <td style="text-align: right">211</td>
+      <td style="text-align: right">269</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\swagger-docs.yaml</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">219</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\swagger-docs.yaml</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">219</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\data\medals.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">202</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\medals.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">202</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\routes.html</td>
+      <td style="text-align: right">31</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">196</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\procedure-galerie.html</td>
+      <td style="text-align: right">25</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">158</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\scripts\generate-md-gallery.mjs</td>
+      <td style="text-align: right">13</td>
+      <td style="text-align: right">17</td>
+      <td style="text-align: right">134</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\scripts\generate-md-gallery.mjs</td>
+      <td style="text-align: right">13</td>
+      <td style="text-align: right">17</td>
+      <td style="text-align: right">134</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\data\roadmap_padel.md</td>
+      <td style="text-align: right">38</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">129</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\roadmap_padel.md</td>
+      <td style="text-align: right">38</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">129</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\assets\main.css</td>
+      <td style="text-align: right">128</td>
+      <td style="text-align: right">21</td>
+      <td style="text-align: right">128</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\schema-moovit-users-standardJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">127</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\public\stylesheets\style.css</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">118</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\public\stylesheets\style.css</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">118</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\resources\schema-moovit-users-mongoDBJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">113</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\routes.html</td>
+      <td style="text-align: right">27</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">113</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\resources\schema-moovit-users-mongoDBJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">113</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\resources\schema-moovit-users-mongoDBJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">113</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\schema-moovit-activities-standardJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">109</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\index.html</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">97</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\routes.md</td>
+      <td style="text-align: right">28</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">93</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\resources\schema-moovit-activities-mongoDBJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">87</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\resources\schema-moovit-activities-mongoDBJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">87</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\resources\schema-moovit-activities-mongoDBJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">87</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_layouts\default.html</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">83</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\procedure-galerie.html</td>
+      <td style="text-align: right">21</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">75</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\scripts\list-images.mjs</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">74</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\scripts\list-images.mjs</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">74</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\stats-code-front.md</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">72</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\procedure-galerie.md</td>
+      <td style="text-align: right">20</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">61</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\assets\css\dark.css</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">45</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\assets\css\dark.css</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">45</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\assets\css\dark.css</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">45</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\models\users.js</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">45</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\public\index.html</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">43</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\models\users.js</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">41</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\schema-moovit-medals-standardJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">39</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\scripts\update-gallery.mjs</td>
+      <td style="text-align: right">11</td>
+      <td style="text-align: right">13</td>
+      <td style="text-align: right">38</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\scripts\update-gallery.mjs</td>
+      <td style="text-align: right">11</td>
+      <td style="text-align: right">13</td>
+      <td style="text-align: right">38</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\scripts\upload-front.mjs</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">37</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\scripts\upload-front.mjs</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">37</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\scripts\run_doc.mjs</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: right">9</td>
+      <td style="text-align: right">29</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\scripts\run_doc.mjs</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: right">9</td>
+      <td style="text-align: right">29</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\app.js</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">28</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\models\activities.js</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">27</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\models\activities.js</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">26</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\resources\schema-moovit-medals-mongoDBJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\resources\schema-moovit-medals-mongoDBJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\resources\schema-moovit-medals-mongoDBJSON.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\public\index.html</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">24</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\models\connection.js</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">24</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\newrelic.js</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">32</td>
+      <td style="text-align: right">24</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\data\activities_sample.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">23</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\activities_sample.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">23</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\tests\userSignin.test.js</td>
+      <td style="text-align: right">11</td>
+      <td style="text-align: right">13</td>
+      <td style="text-align: right">23</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\app.js</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">22</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\assets\minima-social-icons.svg</td>
+      <td style="text-align: right">15</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">18</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\data\Parcours Natation MVP 1f1acb7c345480abb739df86a8efed47_all.csv</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">16</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\data\Parcours Padel MVP 1f1acb7c345480639a26fec64665debb_all.csv</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">16</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\Parcours Natation MVP 1f1acb7c345480abb739df86a8efed47_all.csv</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">16</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\Parcours Padel MVP 1f1acb7c345480639a26fec64665debb_all.csv</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">16</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\index.md</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">16</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\swagger.js</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\vercel.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\swagger.js</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\vercel.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\index.html</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">14</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\models\medals.js</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">10</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\modules\checkBody.js</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">10</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\models\medals.js</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">10</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\modules\checkBody.js</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">10</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\routes\api.js</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">10</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\models\connection.js</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\routes\api.js</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">20</td>
+      <td style="text-align: right">6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\assets\about.txt</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">5</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_config.yml</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">5</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\assets\about.txt</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">5</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\assets\about.txt</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">5</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">..vscode\settings.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\routes\index.js</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">9</td>
+      <td style="text-align: right">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\README.md</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\README.md</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">._site\docs\assets\site.webmanifest</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\assets\site.webmanifest</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs_site\feed.xml</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\docs\assets\site.webmanifest</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">SUM:</td>
+      <td style="text-align: right">1754</td>
+      <td style="text-align: right">576</td>
+      <td style="text-align: right">24242</td>
+    </tr>
+  </tbody>
+</table>
+</main>
+
+      <footer>
+        Projet de Fin de Batch #165 – Amel, Nico, Sami, Sofiane, Stéphane – ©
+        Mai 2025
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const root = document.documentElement
+        const toggle = document.getElementById("theme-toggle")
+        const stored = localStorage.getItem("theme")
+        if (
+          stored === "dark" ||
+          (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          root.classList.add("dark-mode")
+          toggle.checked = true
+        }
+        toggle.addEventListener("change", function () {
+          const isDark = root.classList.toggle("dark-mode")
+          localStorage.setItem("theme", isDark ? "dark" : "light")
+        })
+      })
+
+      // Vérifie le statut de l'API
+      const statusElement = document.getElementById("api-status-message")
+      const statusLight = document.getElementById("api-status-light")
+
+      fetch("https://api.mooveit.ovh/api/status")
+        .then((res) => {
+          if (!res.ok) throw new Error("API error")
+          return res.json()
+        })
+        .then((data) => {
+          if (statusElement) statusElement.textContent = "🟢 API opérationnelle"
+          if (statusLight) {
+            statusLight.textContent = "🟢 API status"
+            statusLight.style.color = "green"
+          }
+        })
+        .catch(() => {
+          if (statusElement)
+            statusElement.textContent = "❌ L’API ne répond pas"
+          if (statusLight) {
+            statusLight.textContent = "🔴 API status"
+            statusLight.style.color = "red"
+          }
+        })
+    </script>
+  </body>
+</html>

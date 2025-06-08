@@ -22,6 +22,9 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 
+// sert le fichier public/index.html point d'entrée de la doc
+app.use(express.static(path.join(__dirname, "public")))
+
 // Sert la doc Jekyll sur /docs
 app.use("/docs", express.static(path.join(__dirname, "docs", "_site")))
 
