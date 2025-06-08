@@ -67,3 +67,11 @@ typings/
 # dossier images
 /docs/resources/images/
 /docs/_site/resources/images/
+
+# dossier public files
+/_site
+!_site/public/docs/**
+docs/_site/
+_site/
+
+

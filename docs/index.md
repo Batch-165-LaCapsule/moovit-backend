@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Accueil
+permalink: /
 ---
 
 # MooveIt React Native App (Batch #165)
@@ -12,6 +13,7 @@ Divers outils et technologies seront présentées ici et documentées durant tou
 <br><br>
 **Ressources** :
 <br><br>
+
 - Utilisation de Cloudinary (compte **deuhttaaq**) pour stocker et servir les assets.
 - Procédure d'upload sur cloudinary et de mise à jour de la galerie d'image dans le repo backend
 - Documentation des routes API pour l’authentification et la récupération d’images via Swagger

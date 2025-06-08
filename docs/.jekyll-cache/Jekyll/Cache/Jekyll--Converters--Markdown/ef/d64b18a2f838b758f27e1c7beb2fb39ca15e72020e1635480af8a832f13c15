@@ -1,0 +1,435 @@
+I"Y?<h1 id="statistiques-de-code--frontend-react-native--expo">Statistiques de code – Frontend (React Native / Expo)</h1>
+
+<blockquote>
+  <p>Généré automatiquement avec <a href="https://github.com/AlDanial/cloc">cloc</a></p>
+</blockquote>
+
+<ul>
+  <li>📆 Date : 2025-06-08</li>
+  <li>📁 Dossier analysé : <code class="language-plaintext highlighter-rouge">moovit-frontend/</code></li>
+  <li>🧹 Fichiers exclus : <code class="language-plaintext highlighter-rouge">node_modules</code>, <code class="language-plaintext highlighter-rouge">.expo</code>, <code class="language-plaintext highlighter-rouge">dist</code>, <code class="language-plaintext highlighter-rouge">coverage</code>, <code class="language-plaintext highlighter-rouge">package.json</code>, fichiers Lottie, <code class="language-plaintext highlighter-rouge">.idea</code>, etc.</li>
+  <li>🔍 Type de fichiers inclus : <code class="language-plaintext highlighter-rouge">.js</code>, <code class="language-plaintext highlighter-rouge">.jsx</code>, <code class="language-plaintext highlighter-rouge">.ts</code>, <code class="language-plaintext highlighter-rouge">.tsx</code> uniquement</li>
+</ul>
+
+<hr />
+
+<p>cloc|github.com/AlDanial/cloc v 2.04  T=0.09 s (717.2 files/s, 85292.0 lines/s)
+— | —</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">File</th>
+      <th style="text-align: right">blank</th>
+      <th style="text-align: right">comment</th>
+      <th style="text-align: right">code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">.\data\activitiestest.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1178</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">..idea\caches\deviceStreaming.xml</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">703</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Main\Dashboard.jsx</td>
+      <td style="text-align: right">21</td>
+      <td style="text-align: right">13</td>
+      <td style="text-align: right">428</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Auth\SignupScreen.jsx</td>
+      <td style="text-align: right">15</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">279</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Auth\LoginScreen.jsx</td>
+      <td style="text-align: right">22</td>
+      <td style="text-align: right">25</td>
+      <td style="text-align: right">241</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\activities_sample.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">237</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Main\ProfileScreen.jsx</td>
+      <td style="text-align: right">23</td>
+      <td style="text-align: right">25</td>
+      <td style="text-align: right">226</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Activities\OnActPlay\OnPlay.jsx</td>
+      <td style="text-align: right">15</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">213</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Activities\OnActPlay\OnProgress.jsx</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">211</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\OnBoarding\OnBoardingForms.jsx</td>
+      <td style="text-align: right">28</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">211</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\SemiCircleProgress.jsx</td>
+      <td style="text-align: right">16</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">174</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\onBoardingQuestion.json</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">156</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\CreditScreen.jsx</td>
+      <td style="text-align: right">20</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">150</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Main\TimerScreen.jsx</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">141</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Activities\OnActPlay\OnDone.jsx</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">140</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Activities\Play.jsx</td>
+      <td style="text-align: right">12</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">140</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\HistoryPlay.jsx</td>
+      <td style="text-align: right">14</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">140</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\NewLevelScreen.jsx</td>
+      <td style="text-align: right">13</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">133</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\App.js</td>
+      <td style="text-align: right">14</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">132</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\LevelScreen.jsx</td>
+      <td style="text-align: right">15</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">124</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\CardLevelClicable.jsx</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">11</td>
+      <td style="text-align: right">120</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\QuestionOnBoard\CheckBoxObjectGroup.jsx</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">100</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\MooveItFunChart.jsx</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">99</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\QuestionOnBoard\CheckBoxGroup.jsx</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">97</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\QuestionOnBoard\FieldBox.jsx</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">94</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\StatiscticGraphic.jsx</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">82</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\QuestionOnBoard\ImageSelect.jsx</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">78</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Auth\SplashScreen.jsx</td>
+      <td style="text-align: right">11</td>
+      <td style="text-align: right">61</td>
+      <td style="text-align: right">78</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\Tabnavigation.jsx</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">70</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\cgu-fr.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">67</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\InstructionCard.jsx</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">65</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Auth\CGUScreen.jsx</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">62</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\Auth\ForgotScreen.jsx</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">57</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">..idea\workspace.xml</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">53</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\meteoIcons.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">49</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\ActivityCard.jsx</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">47</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\StaticCard.jsx</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">44</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\usertest.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">40</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\reducers\userSlice.js</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">40</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\Card.jsx</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">37</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\CardAct.jsx</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">36</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\data\testdede.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">35</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\BarStep.jsx</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">33</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\ExercisesProgressBar.jsx</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">32</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\Buttons.jsx</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">31</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\PhotoProfil.jsx</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">30</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\app.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">29</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\ProgressStep.jsx</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">28</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\ProgressBarComp..jsx</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">27</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\LevelCard.jsx</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">22</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\MeteoMiniCard.jsx</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">22</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\PhotoCircle.jsx</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">22</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\ProgressBarXp.jsx</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">22</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\components\ProgressBar.jsx</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">21</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\reducers\activitySlice.js</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">19</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\reducers\onBoardingSlice.js</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">19</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\autre\PlayScreen.jsx</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">19</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\autre\Profile.jsx</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">19</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\screens\TestChartScreen.jsx</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">12</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\modules\checkBody.js</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">10</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">..idea\moovit-frontend.iml</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">9</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">..idea\modules.xml</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">..idea\misc.xml</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">..idea\vcs.xml</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\index.js</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.\assets\Animation - 1748526184745.json</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">SUM:</td>
+      <td style="text-align: right">395</td>
+      <td style="text-align: right">197</td>
+      <td style="text-align: right">7257</td>
+    </tr>
+  </tbody>
+</table>
+:ET
