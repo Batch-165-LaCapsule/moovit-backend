@@ -1,5 +1,10 @@
 title: MooveIt Backend
-baseurl: "/moovit-backend"
-url: "https://batch-165-lacapsule.github.io"
+url: "https://api.mooveit.ovh"
 markdown: kramdown
 theme: minima
+
+minima:
+  skin: classic
+  social_links: []
+  show_excerpts: false
+  date_format: "%Y-%m-%d"
