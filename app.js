@@ -21,11 +21,9 @@ app.use(logger("dev"))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
-// Sert les fichiers statiques du dossier public (CSS, images, JS... utilisés par index.html)
-app.use(express.static(path.join(__dirname, "public")))
 
-// Sert les fichiers HTML générés par Jekyll (ex: stats-code-front.html, etc.)
-app.use(express.static(path.join(__dirname, "_site", "public")))
+// Sert la doc Jekyll sur /docs
+app.use("/docs", express.static(path.join(__dirname, "docs", "_site")))
 
 // app.use("/", indexRouter);
 app.use("/api/users", usersRouter) // maj de usersRouter avec le /api
